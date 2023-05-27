@@ -15,6 +15,8 @@ import Skill07 from "../../assets/git.png";
 import Skill08 from "../../assets/css.png";
 import Skill09 from "../../assets/redux.png";
 import Skill10 from "../../assets/html.png";
+import Skill11 from "../../assets/github.png";
+import Skill12 from "../../assets/sql.png";
 const Skills = () => {
   const skills = [
     {
@@ -60,6 +62,13 @@ const Skills = () => {
       bgColor: "white",
     },
     {
+      name: "GitHub",
+      description: "Modern Portfolio Website ",
+      imgURL: Skill11,
+      tags: "UIEvent/Ux",
+      bgColor: "white",
+    },
+    {
       name: "Git",
       description: "Modern Portfolio Website ",
       imgURL: Skill07,
@@ -80,6 +89,11 @@ const Skills = () => {
       name: "HTML",
       description: "I am a excellent Web Developer",
       imgURL: Skill10,
+    },
+    {
+      name: "SQL",
+      description: "I am a excellent Web Developer",
+      imgURL: Skill12,
     },
   ];
   const experience = [

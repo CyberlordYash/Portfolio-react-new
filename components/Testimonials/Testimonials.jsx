@@ -4,7 +4,9 @@ import AppWrap from "../../wrapper/AppWrap";
 import "./Testimonials.scss";
 import test01 from "../../assets/about01.png";
 import test02 from "../../assets/about02.png";
-import test03 from "../../assets/css.png";
+import test03 from "../../assets/iiit.png";
+import test04 from "../../assets/school.png";
+import test05 from "../../assets/bda.jpeg";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 const Testimonials = () => {
   const brands = [
@@ -12,10 +14,16 @@ const Testimonials = () => {
       name: "AMAZON",
       company: "Netflix",
       feedback: "Yash is awesome",
-      imgUrl: test03,
+      imgUrl: test04,
     },
     {
       name: "Yash",
+      company: "Netflix",
+      feedback: "Yash is awesome",
+      imgUrl: test05,
+    },
+    {
+      name: "AMAZON",
       company: "Netflix",
       feedback: "Yash is awesome",
       imgUrl: test03,

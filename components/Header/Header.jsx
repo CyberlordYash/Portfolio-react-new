@@ -3,8 +3,8 @@ import { easeInOut, motion } from "framer-motion";
 import Profile from "../../assets/profile.png";
 import Circle from "../../assets/circle.svg";
 import Flutter from "../../assets/flutter.png";
-import Redux from "../../assets/redux.png";
-import Sass from "../../assets/sass.png";
+import Redux from "../../assets/cpp.png";
+import Sass from "../../assets/react.png";
 import "./Header.scss";
 import AppWrap from "../../wrapper/AppWrap";
 const Header = () => {

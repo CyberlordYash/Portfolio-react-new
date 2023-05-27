@@ -26,7 +26,7 @@ const Footer = () => {
     };
   };
   return (
-    <div className="bgf">
+    <>
       <h2 className="head-text">Take a coffee & chat with me</h2>
       <div className="app__footer-cards">
         <div className="app__footer-card">
@@ -83,7 +83,7 @@ const Footer = () => {
           <h3 className="head-text">Thank you for getting in touch</h3>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
