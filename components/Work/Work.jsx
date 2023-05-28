@@ -4,15 +4,15 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import AppWrap from "../../wrapper/AppWrap";
 import Work01 from "../../assets/about01.png";
-import Work03 from "../../assets/about03.png";
 import Work02 from "../../assets/about02.png";
 import Work04 from "../../assets/about04.png";
+import Gym from "../../assets/gym.jpg";
 const Work = () => {
   const works = [
     {
-      title: "Modern Website",
+      title: "Gym Shark",
       description: "Modern Portfolio Website ",
-      imgURL: Work03,
+      imgURL: Gym,
       tags: "UIEvent/Ux",
     },
     {
@@ -33,10 +33,11 @@ const Work = () => {
   ];
   const filterWork = [
     {
-      title: "Modern Website",
-      description: "Modern Portfolio Website ",
-      imgURL: Work03,
-      tags: "UIEvent/Ux",
+      title: "Gym Shark",
+      description:
+        "A React website made to help individual focus on their health goals  ",
+      imgURL: Gym,
+      tags: "React+Typescript+RapidAPIs",
     },
     {
       title: "App Developer",

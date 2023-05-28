@@ -17,6 +17,11 @@ import Skill09 from "../../assets/redux.png";
 import Skill10 from "../../assets/html.png";
 import Skill11 from "../../assets/github.png";
 import Skill12 from "../../assets/sql.png";
+import Skill13 from "../../assets/mongo.png";
+import Skill14 from "../../assets/express.png";
+import Skill15 from "../../assets/dart.png";
+import Skill16 from "../../assets/firebase.png";
+import Skill17 from "../../assets/aws.png";
 const Skills = () => {
   const skills = [
     {
@@ -48,6 +53,27 @@ const Skills = () => {
       bgColor: "white",
     },
     {
+      name: "Mongo DB",
+      description: "Modern Portfolio Website ",
+      imgURL: Skill13,
+      tags: "UIEvent/Ux",
+      bgColor: "white",
+    },
+    {
+      name: "Express JS",
+      description: "Modern Portfolio Website ",
+      imgURL: Skill14,
+      tags: "UIEvent/Ux",
+      bgColor: "white",
+    },
+    {
+      name: "AWS",
+      description: "Modern Portfolio Website ",
+      imgURL: Skill17,
+      tags: "UIEvent/Ux",
+      bgColor: "white",
+    },
+    {
       name: "Javascript",
       description: "Modern Portfolio Website ",
       imgURL: Skill05,
@@ -62,6 +88,13 @@ const Skills = () => {
       bgColor: "white",
     },
     {
+      name: "Dart",
+      description: "Modern Portfolio Website ",
+      imgURL: Skill15,
+      tags: "UIEvent/Ux",
+      bgColor: "white",
+    },
+    {
       name: "GitHub",
       description: "Modern Portfolio Website ",
       imgURL: Skill11,
@@ -72,6 +105,13 @@ const Skills = () => {
       name: "Git",
       description: "Modern Portfolio Website ",
       imgURL: Skill07,
+      tags: "UIEvent/Ux",
+      bgColor: "white",
+    },
+    {
+      name: "Firebase",
+      description: "Modern Portfolio Website ",
+      imgURL: Skill16,
       tags: "UIEvent/Ux",
       bgColor: "white",
     },
