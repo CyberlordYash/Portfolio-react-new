@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import AppWrap from "../../wrapper/AppWrap";
 const abouts = [
   {
-    title: "Web Developer",
+    title: "Web Development",
     description: "I am a excellent Web Developer",
     imgURL: About01,
   },
@@ -18,13 +18,13 @@ const abouts = [
     imgURL: About02,
   },
   {
-    title: "Web Developer",
-    description: "I am a excellent Web Developer",
+    title: "Data Structure and Algorithms",
+    description: "",
     imgURL: About03,
   },
   {
-    title: "Web Developer",
-    description: "I am a excellent Web Developer",
+    title: "Backend developer",
+    description: "",
     imgURL: About04,
   },
 ];

@@ -14,6 +14,7 @@ const Work = () => {
       description: "Modern Portfolio Website ",
       imgURL: Gym,
       tags: "UIEvent/Ux",
+      projectLink: "https://mega.nz/folder/xVBinJoC#IQ0QzdSLL-lb7VVTY7XbSQ",
     },
     {
       title: "App Developer",
@@ -37,21 +38,23 @@ const Work = () => {
       description:
         "A React website made to help individual focus on their health goals  ",
       imgURL: Gym,
-      tags: "React+Typescript+RapidAPIs",
+      tags: "React+Typescript+RapidAPIs+MUI",
+      projectLink: "https://dev-yash-gymshark.netlify.app/",
+      codeLink: "https://github.com/CyberlordYash/Gym-shark",
     },
     {
-      title: "App Developer",
-      description: "I am a excellent App Developer",
+      title: "Under Development",
+      description: "--",
       imgURL: Work01,
     },
     {
-      title: "Web Developer",
-      description: "I am a excellent Web Developer",
+      title: "Under Development",
+      description: "--",
       imgURL: Work02,
     },
     {
-      title: "Web Developer",
-      description: "I am a excellent Web Developer",
+      title: "Under Development",
+      description: "--",
       imgURL: Work04,
     },
   ];
