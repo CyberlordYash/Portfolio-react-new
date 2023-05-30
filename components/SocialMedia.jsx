@@ -4,15 +4,19 @@ import { FaFacebookF } from "react-icons/fa";
 const SocialMedia = () => {
   return (
     <div className="app__social">
-      <div>
-        <BsTwitter></BsTwitter>
-      </div>
+      <a href="https://twitter.com/cyberlordyash?t=ctKn3D5kvlO6CunzNKopHg&s=08">
+        <div>
+          <BsTwitter></BsTwitter>
+        </div>
+      </a>
       <div>
         <FaFacebookF></FaFacebookF>
       </div>
-      <div>
-        <BsInstagram></BsInstagram>
-      </div>
+      <a href="https://instagram.com/isthat_yash__?igshid=MzNlNGNkZWQ4Mg==">
+        <div>
+          <BsInstagram></BsInstagram>
+        </div>
+      </a>
     </div>
   );
 };

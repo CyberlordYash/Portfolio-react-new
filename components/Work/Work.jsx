@@ -7,6 +7,7 @@ import Work01 from "../../assets/about01.png";
 import Work02 from "../../assets/about02.png";
 import Work04 from "../../assets/about04.png";
 import Gym from "../../assets/gym.jpg";
+import Todo from "../../assets/todo.png";
 const Work = () => {
   const works = [
     {
@@ -41,6 +42,14 @@ const Work = () => {
       tags: "React+Typescript+RapidAPIs+MUI",
       projectLink: "https://dev-yash-gymshark.netlify.app/",
       codeLink: "https://github.com/CyberlordYash/Gym-shark",
+    },
+    {
+      title: "ToDo app",
+      description: "A simple Flutter app for balancing power and simplicity  ",
+      imgURL: Todo,
+      tags: "Flutter+Firebase",
+      projectLink: "https://github.com/CyberlordYash/ToDo-Android",
+      codeLink: "https://github.com/CyberlordYash/ToDo-Android",
     },
     {
       title: "Under Development",
