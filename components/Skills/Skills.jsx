@@ -139,13 +139,19 @@ const Skills = () => {
   const experience = [
     {
       name: "Frontend Developer",
-      company: "IIIT",
+      company: "IIIT S",
       desc: "worked as a frontend developer at IIIT",
       year: "2023",
     },
     {
       name: "Backend Developer",
-      company: "IIIT",
+      company: "IIIT ",
+      desc: "worked as a backend developer at IIIT",
+      year: "2023",
+    },
+    {
+      name: "--Section incomplete--",
+      company: "IIIT ",
       desc: "worked as a backend developer at IIIT",
       year: "2023",
     },

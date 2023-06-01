@@ -23,7 +23,7 @@ const abouts = [
     imgURL: About03,
   },
   {
-    title: "Backend developer",
+    title: "Blockchain Enthusiast",
     description: "",
     imgURL: About04,
   },
