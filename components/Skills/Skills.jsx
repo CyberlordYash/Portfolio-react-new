@@ -29,14 +29,14 @@ const Skills = () => {
       description: "Modern Portfolio Website ",
       imgURL: Skill01,
       tags: "UIEvent/Ux",
-      bgColor: "white",
+      bgColor: "black",
     },
     {
       name: "C++",
       description: "Modern Portfolio Website ",
       imgURL: Skill02,
       tags: "UIEvent/Ux",
-      bgColor: "white",
+      bgColor: "black",
     },
     {
       name: "Flutter",

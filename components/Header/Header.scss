@@ -1,5 +1,6 @@
 #home {
   position: relative;
+
   background-image: url(../../assets/b.svg);
   background-size: cover;
   background-repeat: repeat;
@@ -55,7 +56,14 @@
     flex-direction: row;
     width: auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    border: 1px solid rgba(255, 255, 255, 0.51);
+    // border-image: linear-gradient(#0079ff, #00dfa2) 30 round;
+    border-color: #0079ff;
+
+    background-color: #040714;
+  }
+  .tag-cmp::after {
+    border-radius: 10px;
   }
   .tag-cmp {
     flex-direction: column;
@@ -89,8 +97,9 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: var(--white-color);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border: 3px solid rgba(13, 151, 231, 0.18);
+    background-color: black;
+    box-shadow: 0 0 20px rgba(33, 81, 193, 0.151);
     img {
       width: 60%;
       height: 60%;
