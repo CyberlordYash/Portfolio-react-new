@@ -13,12 +13,14 @@
 }
 .app__testimonial-item {
   width: 60%;
+
   min-height: 320px;
-  background-color: var(--white-color);
+  background-color: #100c24;
+  border: solid 1px rgb(85, 0, 255);
   display: flex;
   padding: 2rem;
   border-radius: 16px;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px rgba(157, 7, 7, 0.1);
   transition: all 0.3s ease-in-out;
   img {
     width: 100px;

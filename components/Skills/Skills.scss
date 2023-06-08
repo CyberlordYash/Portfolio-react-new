@@ -12,7 +12,7 @@
 .app__skills-container {
   width: 90%;
   margin-top: 3rem;
-  margin-left: 2rem;
+  margin-left: 0.3rem;
   display: flex;
   flex-direction: row;
   @media screen and (max-width: 900px) {
@@ -37,7 +37,7 @@
 .app__skills-item {
   flex-direction: column;
   text-align: center;
-  margin: 1rem;
+  margin: 0.7rem;
   transition: all 0.3s ease-in-out;
 
   div {

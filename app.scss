@@ -3,6 +3,9 @@
   font-family: var(--font-base);
   overflow: hidden;
 }
+.app::-webkit-scrollbar {
+  display: none;
+}
 .dark {
   background-color: #050816;
 }
