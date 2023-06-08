@@ -29,14 +29,14 @@ const Skills = () => {
       description: "Modern Portfolio Website ",
       imgURL: Skill01,
       tags: "UIEvent/Ux",
-      bgColor: "black",
+      bgColor: "white",
     },
     {
       name: "C++",
       description: "Modern Portfolio Website ",
       imgURL: Skill02,
       tags: "UIEvent/Ux",
-      bgColor: "black",
+      bgColor: "white",
     },
     {
       name: "Flutter",
@@ -119,21 +119,25 @@ const Skills = () => {
       name: "CSS",
       description: "I am a excellent App Developer",
       imgURL: Skill08,
+      bgColor: "white",
     },
     {
       name: "Redux",
       description: "I am a excellent Web Developer",
       imgURL: Skill09,
+      bgColor: "white",
     },
     {
       name: "HTML",
       description: "I am a excellent Web Developer",
       imgURL: Skill10,
+      bgColor: "white",
     },
     {
       name: "SQL",
       description: "I am a excellent Web Developer",
       imgURL: Skill12,
+      bgColor: "white",
     },
   ];
   const experience = [
@@ -157,7 +161,7 @@ const Skills = () => {
     },
   ];
   return (
-    <div className="bg">
+    <div className="app__skills">
       <h2 className="head-text"> Skills and Experience</h2>
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
@@ -168,10 +172,7 @@ const Skills = () => {
               className="app__skills-item app__flex"
               key={skill.name}
             >
-              <div
-                className="app__flex"
-                style={{ backgroundColor: skill.bgColor }}
-              >
+              <div className="app__flex" style={{ backgroundColor: "black" }}>
                 <img src={skill.imgURL}></img>
               </div>
               <p className="p-text">{skill.name}</p>
@@ -209,4 +210,4 @@ const Skills = () => {
   );
 };
 
-export default AppWrap(Skills);
+export default AppWrap(Skills, "skills");
