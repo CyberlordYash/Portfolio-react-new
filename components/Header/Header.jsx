@@ -34,7 +34,18 @@ const Header = () => {
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
-        <img src={Profile} alt="profile-bg"></img>
+        <motion.div
+          initial={{ y: -10 }}
+          animate={{ y: 10 }}
+          transition={{
+            type: "smooth",
+            repeatType: "mirror",
+            duration: 2,
+            repeat: Infinity,
+          }}
+        >
+          <img src={Profile} alt="profile-bg"></img>
+        </motion.div>
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}

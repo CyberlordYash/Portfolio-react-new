@@ -83,6 +83,7 @@
   }
   @media screen and (max-width: 1200px) {
     justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 .app__header-circles {
@@ -151,7 +152,7 @@
   align-items: flex-end;
   position: relative;
   img {
-    width: 100%;
+    width: 115%;
     object-fit: contain;
     z-index: 1;
   }
