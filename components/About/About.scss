@@ -43,3 +43,25 @@
     }
   }
 }
+.p-texts {
+  padding: 2rem;
+
+  color: rgba(255, 255, 255, 0.808);
+  @media screen and (min-width: 1400px) {
+    padding: 2rem 12rem 2rem 3rem;
+  }
+}
+.size {
+  font-size: 2rem;
+}
+.introduction {
+  background-color: #100d25;
+  margin: 1rem 0 2rem 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+}

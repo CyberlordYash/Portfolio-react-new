@@ -51,6 +51,9 @@
 }
 
 .app__footer-form {
+  background-color: #100d25;
+  padding: 1rem;
+  border-radius: 10px;
   width: 65%;
   flex-direction: column;
   margin: 1rem 2rem;
@@ -67,7 +70,7 @@
       padding: 0.99rem;
       border: none;
       border-radius: 8px;
-      background-color: rgba(12, 0, 46, 0.788);
+      background-color: #151030;
       font-family: var(--font-base);
       color: white;
       outline: none;

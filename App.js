@@ -7,7 +7,7 @@ import Work from "./components/Work/Work";
 import Skills from "./components/Skills/Skills";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
-import DarkMode from "./DarkMode";
+
 import Lottie from "lottie-react";
 import Line from "./assets/line.json";
 import Loading from "./assets/loading.json";
@@ -18,7 +18,7 @@ const App = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3200);
+    }, 2800);
   }, []);
   return (
     <div className="app">

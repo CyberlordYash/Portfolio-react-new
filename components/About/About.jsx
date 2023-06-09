@@ -6,6 +6,8 @@ import About03 from "../../assets/about03.png";
 import About04 from "../../assets/about04.png";
 import { motion } from "framer-motion";
 import AppWrap from "../../wrapper/AppWrap";
+import Lottie from "lottie-react";
+import Laptop from "../../assets/laptop.json";
 const abouts = [
   {
     title: "Web Development",
@@ -32,6 +34,21 @@ const About = () => {
   return (
     <div className="bg">
       <h2 className="head-text">
+        Intro<span>duction</span>
+      </h2>
+      <div className="introduction">
+        <Lottie animationData={Laptop} className="laptop"></Lottie>
+
+        <p className="p-texts">
+          I am Yash Sachan pursuing BTech in CSE in IIIT Sonepat. I'm a frontend
+          focussed full stack developers with experience in front end web
+          development, backend debugging and UI UX designing. I'm a quick
+          learner and good team player, can collaborate with clients efficiently
+          and work on developing scalable, user-friendly solutions. Please feel
+          free to find out more.
+        </p>
+      </div>
+      <h2 className="head-text size">
         Software is a great combination of
         <br />
         <span>Artistry </span>
