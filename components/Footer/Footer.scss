@@ -11,7 +11,7 @@
   flex-wrap: wrap;
   margin: 4rem 2rem 2rem;
   .app__footer-card {
-    min-width: 290px;
+    min-width: 330px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -20,7 +20,7 @@
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
-    background-color: #fef4f5;
+    background-color: rgba(93, 4, 4, 0.578);
     transition: all 0.3s ease-in-out;
     img {
       width: 65px;
@@ -35,7 +35,7 @@
       font-weight: 500;
     }
     &:hover {
-      box-shadow: 0 0 25px rgb(123, 63, 157);
+      box-shadow: 0 0 25px rgba(123, 63, 157, 0.421);
     }
     @media screen and (max-width: 450px) {
       width: 100%;
@@ -47,7 +47,7 @@
   }
 }
 .app__footer-cards .app__footer-card:last-child {
-  background-color: #f2f7f8;
+  background-color: #065160a3;
 }
 
 .app__footer-form {
@@ -67,16 +67,16 @@
       padding: 0.99rem;
       border: none;
       border-radius: 8px;
-      background-color: var(--primary-color);
+      background-color: rgba(12, 0, 46, 0.788);
       font-family: var(--font-base);
-      color: var(--secondary-color);
+      color: white;
       outline: none;
     }
     textarea {
       height: 170px;
     }
     &:hover {
-      box-shadow: 0 0 25px rgb(165, 130, 185);
+      box-shadow: 0 0 25px rgba(13, 90, 124, 0.493);
     }
   }
   button {
