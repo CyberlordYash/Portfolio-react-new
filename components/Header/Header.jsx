@@ -58,7 +58,7 @@ const Header = () => {
         transition={{ duration: 1, ease: easeInOut }}
         className="app__header-circles"
       >
-        {[Flutter, Redux, Sass].map((circle, index) => (
+        {[Flutter, Sass, Redux].map((circle, index) => (
           <div className="circle-cmp app__flex" key={`circle-${index}`}>
             <img src={circle}></img>
           </div>

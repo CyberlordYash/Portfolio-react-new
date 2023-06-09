@@ -13,18 +13,18 @@ import Line from "./assets/line.json";
 import Loading from "./assets/loading.json";
 import Github from "./assets/github.json";
 const App = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3500);
+    }, 3200);
   }, []);
   return (
     <div className="app">
       {loading ? (
         <div className="loading">
-          <Lottie animationData={Loading} className="loadin"></Lottie>
+          <Lottie animationData={Loading} className="lottie"></Lottie>
         </div>
       ) : (
         <div>
