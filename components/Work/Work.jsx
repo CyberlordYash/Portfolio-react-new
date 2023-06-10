@@ -8,6 +8,7 @@ import Work02 from "../../assets/about02.png";
 import Work04 from "../../assets/about04.png";
 import Gym from "../../assets/gym.jpg";
 import Todo from "../../assets/todo.png";
+import Jarvis from "../../assets/jarivs.jpg";
 const Work = () => {
   const works = [
     {
@@ -44,6 +45,16 @@ const Work = () => {
       codeLink: "https://github.com/CyberlordYash/Gym-shark",
     },
     {
+      title: "JarvisGPT",
+      description: "--",
+      imgURL: Jarvis,
+      tags: "React+OpenAI",
+      description:
+        "A simple ChatGPT clone that answers all of your daily questions  ",
+      projectLink: "https://dev-yash-jarvisgpt.netlify.app/",
+      codeLink: "https://github.com/CyberlordYash/JarvisGPT",
+    },
+    {
       title: "ToDo app",
       description: "A simple Flutter app for balancing power and simplicity  ",
       imgURL: Todo,
@@ -51,16 +62,7 @@ const Work = () => {
       projectLink: "https://github.com/CyberlordYash/ToDo-Android",
       codeLink: "https://github.com/CyberlordYash/ToDo-Android",
     },
-    {
-      title: "Under Development",
-      description: "--",
-      imgURL: Work01,
-    },
-    {
-      title: "Under Development",
-      description: "--",
-      imgURL: Work02,
-    },
+
     {
       title: "Under Development",
       description: "--",
@@ -116,7 +118,7 @@ const Work = () => {
                   ease: "easeInOut",
                   staggeredChildren: 0.5,
                 }}
-                className="app__work-hover app__flex"
+                className="blur app__work-hover app__flex"
               >
                 <a href={work.projectLink}>
                   <motion.div

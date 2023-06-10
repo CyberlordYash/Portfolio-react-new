@@ -2,8 +2,8 @@ import React from "react";
 import "./About.scss";
 import About01 from "../../assets/web.jpg";
 import About02 from "../../assets/app.jpg";
-import About03 from "../../assets/about03.png";
-import About04 from "../../assets/about04.png";
+import About03 from "../../assets/about03.jpg";
+import About04 from "../../assets/about04.jpg";
 import { motion } from "framer-motion";
 import AppWrap from "../../wrapper/AppWrap";
 import Lottie from "lottie-react";
@@ -40,12 +40,13 @@ const About = () => {
         <Lottie animationData={Laptop} className="laptop"></Lottie>
 
         <p className="p-texts">
-          I am Yash Sachan pursuing BTech in CSE in IIIT Sonepat. I'm a frontend
-          focussed full stack developers with experience in front end web
-          development, backend debugging and UI UX designing. I'm a quick
-          learner and good team player, can collaborate with clients efficiently
-          and work on developing scalable, user-friendly solutions. Please feel
-          free to find out more.
+          I am<span> Yash Sachan</span> pursuing BTech in <span>CSE</span> from
+          IIIT Sonepat. I'm a frontend focused <span>full stack developer</span>{" "}
+          with experience in front end web development, backend debugging and UI
+          UX designing. I'm a <span>quick learner</span> and{" "}
+          <span>good team player</span>, can collaborate with clients
+          efficiently and work on developing scalable, user-friendly solutions.
+          Please feel free to find out more.
         </p>
       </div>
       <h2 className="head-text size">
@@ -59,7 +60,7 @@ const About = () => {
         {abouts.map((about, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.35 }}
+            whileHover={{ scale: 1.25 }}
             transition={{ duration: 0.5, type: "tween" }}
             className="app__profile-item"
             key={about.title + index}

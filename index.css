@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 :root {
-  --font-base: "DM Sans", sans-serif;
+  --font-base: "Quicksand", "DM Sans", sans-serif;
 
   --primary-color: #050816;
   --dark-color: #050816;
