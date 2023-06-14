@@ -110,9 +110,7 @@
   flex-direction: column;
 
   padding: 1rem 1rem 6rem 0.8rem;
-  .github {
-    border-radius: 0% 5% 5% 0;
-  }
+
   .insta {
     border-radius: 0 5% 40% 0%;
   }
@@ -159,6 +157,9 @@
         height: 30px;
       }
     }
+  }
+  .github {
+    border-radius: 0% 5% 5% 0;
   }
 }
 
