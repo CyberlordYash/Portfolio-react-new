@@ -7,11 +7,11 @@ import Work from "./components/Work/Work";
 import Skills from "./components/Skills/Skills";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
-
+import Chatbot from "./components/chatbot/Chatbot.jsx";
 import Lottie from "lottie-react";
 import Line from "./assets/line.json";
 import Loading from "./assets/loading.json";
-import Github from "./assets/github.json";
+
 const App = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -28,6 +28,7 @@ const App = () => {
         </div>
       ) : (
         <div>
+          <Chatbot></Chatbot>
           <Navbar />
 
           <Header></Header>
