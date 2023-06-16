@@ -3,6 +3,7 @@ import "./Modal.scss";
 import { useScroll } from "framer-motion";
 function Modal(props) {
   const [text, setText] = useState("Light Mode");
+  let mode = "Light Mode";
   return (
     <div className="Modal__back">
       <div className="Modal">
@@ -20,7 +21,9 @@ function Modal(props) {
         >
           {text}
         </div>
-        <div className="Modal__text">Resume</div>
+        <a href="" className="Modal__text">
+          Resume
+        </a>
       </div>
     </div>
   );

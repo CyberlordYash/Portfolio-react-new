@@ -5,8 +5,83 @@
 }
 .light {
   background-color: #edf2f8;
-  h2 {
+
+  h2,
+  h1,
+  p {
     color: black;
+  }
+  .chatbot {
+    background-color: rgb(220, 216, 216);
+  }
+  .icon {
+    color: #100d25;
+  }
+  .app__social {
+    div {
+      background-color: rgb(220, 216, 216);
+      svg {
+        color: #100d25;
+      }
+    }
+  }
+  .Modal {
+    background-color: rgb(152, 149, 149);
+  }
+  .app__header-badge {
+    .badge-cmp,
+    .tag-cmp {
+      background-color: rgb(221, 220, 226);
+    }
+  }
+  .app__header-circles {
+    div {
+      background-color: rgb(221, 220, 226);
+    }
+  }
+  .introduction {
+    span {
+      color: #100d25;
+    }
+    background-color: rgb(221, 220, 226);
+  }
+  .app__work-portfolio {
+    .app__work-item {
+      background-color: rgb(221, 220, 226);
+      &:hover {
+        background-color: rgb(198, 197, 203);
+        box-shadow: 0 0 25px rgba(73, 39, 196, 0.655);
+      }
+    }
+  }
+  .app__work-tag {
+    p {
+      color: white;
+    }
+  }
+  h4 {
+    color: #100d25;
+  }
+  .app__skills-exp {
+    background-color: rgb(221, 220, 226);
+  }
+  .app__testimonial-item {
+    background-color: rgb(221, 220, 226);
+  }
+  .p-text {
+    color: black;
+  }
+  .bold-text {
+    color: black;
+  }
+  .app__footer-form {
+    background-color: rgb(221, 220, 226);
+    div {
+      input,
+      textarea {
+        background-color: rgb(198, 197, 203);
+      }
+    }
   }
 }
 .app::-webkit-scrollbar {

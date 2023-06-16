@@ -9,7 +9,7 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
 import Chatbot from "./components/chatbot/Chatbot.jsx";
 import Lottie from "lottie-react";
-import Line from "./assets/line.json";
+
 import Loading from "./assets/loading.json";
 
 const App = () => {
@@ -41,15 +41,14 @@ const App = () => {
           <Navbar />
 
           <Header></Header>
-          <Lottie animationData={Line} className="line"></Lottie>
           <About></About>
-          <Lottie animationData={Line} className="line"></Lottie>
+
           <Work></Work>
-          <Lottie animationData={Line} className="line"></Lottie>
+
           <Skills></Skills>
-          <Lottie animationData={Line} className="line"></Lottie>
+
           <Testimonials></Testimonials>
-          <Lottie animationData={Line} className="line"></Lottie>
+
           <Footer></Footer>
         </div>
       )}
