@@ -3,8 +3,7 @@ import "./Work.scss";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import AppWrap from "../../wrapper/AppWrap";
-import Work01 from "../../assets/about01.png";
-import Work02 from "../../assets/about02.png";
+
 import Work04 from "../../assets/about04.png";
 import Gym from "../../assets/gym.jpg";
 import Todo from "../../assets/todo.png";
@@ -21,12 +20,12 @@ const Work = () => {
     {
       title: "App Developer",
       description: "I am a excellent App Developer",
-      imgURL: Work01,
+      imgURL: "",
     },
     {
       title: "Web Developer",
       description: "I am a excellent Web Developer",
-      imgURL: Work02,
+      imgURL: "",
     },
     {
       title: "Web Developer",

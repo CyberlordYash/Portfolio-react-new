@@ -20,15 +20,24 @@ const App = () => {
       setLoading(false);
     }, 2800);
   }, []);
+  const [lightMode, setLightMode] = useState("");
+  const setLightModeHandler = (data) => {
+    setLightMode(data);
+    console.log(data);
+  };
+
   return (
-    <div className="app">
+    <div className={`app ${lightMode}`}>
       {loading ? (
         <div className="loading">
           <Lottie animationData={Loading} className="lottie"></Lottie>
         </div>
       ) : (
         <div>
-          <Chatbot></Chatbot>
+          <Chatbot
+            setLightModeHandler={setLightModeHandler}
+            lightMode={lightMode}
+          ></Chatbot>
           <Navbar />
 
           <Header></Header>

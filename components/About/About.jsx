@@ -2,7 +2,7 @@ import React from "react";
 import "./About.scss";
 import About01 from "../../assets/web.jpg";
 import About02 from "../../assets/app.jpg";
-import About03 from "../../assets/about03.jpg";
+import About05 from "../../assets/about02.jpg";
 import About04 from "../../assets/about04.jpg";
 import { motion } from "framer-motion";
 import AppWrap from "../../wrapper/AppWrap";
@@ -22,7 +22,7 @@ const abouts = [
   {
     title: "Data Structure and Algorithms",
     description: "",
-    imgURL: About03,
+    imgURL: About05,
   },
   {
     title: "Blockchain Enthusiast",

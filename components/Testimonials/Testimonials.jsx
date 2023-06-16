@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import AppWrap from "../../wrapper/AppWrap";
 import "./Testimonials.scss";
-import test01 from "../../assets/about01.png";
-import test02 from "../../assets/about02.png";
+import About05 from "../../assets/about05.jpg";
 import test03 from "../../assets/iiit.png";
 import test04 from "../../assets/school.png";
 import test05 from "../../assets/bda.jpeg";
@@ -34,13 +33,13 @@ const Testimonials = () => {
       name: "Yash",
       company: "Netflix",
       feedback: "Yash is awesome",
-      imgUrl: test01,
+      imgUrl: About05,
     },
     {
       name: "Sachan",
       company: "Netflix",
       feedback: "Yash is awesome",
-      imgUrl: test02,
+      imgUrl: About05,
     },
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
