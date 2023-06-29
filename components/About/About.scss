@@ -11,7 +11,7 @@
 .transparent {
   margin: 2rem 0 0 0;
   padding: 1rem;
-  background-color: rgba(0, 18, 33, 0.163);
+  background-color: rgba(0, 18, 33, 0.101);
   box-shadow: 1px 0px 1px 0.2px rgba(0, 195, 255, 0.448);
   backdrop-filter: blur(30px);
   border-radius: 10px;
@@ -29,8 +29,8 @@
   margin-top: 2rem;
 }
 .app__profile-item {
-  width: 200px;
-  height: 200px;
+  width: 190px;
+  height: 190px;
   display: flex;
   padding: 0.8rem;
   justify-content: flex-start;

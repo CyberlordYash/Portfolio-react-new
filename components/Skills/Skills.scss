@@ -29,13 +29,14 @@
 }
 .app__skills-list {
   flex: 1;
-
+  padding: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
   margin-right: 0rem;
   margin-bottom: 2rem;
+
   @media screen and (max-width: 900px) {
     margin-right: 0;
     justify-content: center;
@@ -46,7 +47,7 @@
   flex-direction: column;
   text-align: center;
   margin: 0.7rem;
-  padding: 0.2rem;
+  padding: 0 0.8rem;
   transition: all 0.3s ease-in-out;
 
   svg {

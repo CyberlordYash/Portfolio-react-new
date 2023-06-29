@@ -75,7 +75,7 @@ const Work = () => {
       <h2 className="head-text">
         My Creative
         <br />
-        <span>Portfolio </span>
+        <span>Projects </span>
         Section
       </h2>
       <div className="app__work-filter">

@@ -4,10 +4,15 @@ import { useScroll } from "framer-motion";
 import { MdDarkMode } from "react-icons/md";
 import { BsSunFill } from "react-icons/bs";
 import { AiOutlineFileDone } from "react-icons/ai";
+import { motion } from "framer-motion";
 function Modal(props) {
   return (
     <div className="Modal__back">
-      <div className="Modal">
+      <motion.div
+        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="Modal"
+      >
         <div className="Modes">
           <div
             className="Modal__text darkmode"
@@ -41,7 +46,7 @@ function Modal(props) {
             Resume
           </a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
