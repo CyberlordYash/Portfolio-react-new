@@ -10,14 +10,21 @@
   flex-direction: column;
 }
 .app__skills-container {
+  background-color: rgba(0, 18, 33, 0.316);
+  backdrop-filter: blur(20px);
+  box-shadow: 1px 0px 1px 1px rgba(0, 195, 255, 0.448);
+  border-radius: 10px;
   width: 90%;
   margin-top: 3rem;
-  margin-left: 0.3rem;
+  margin-left: 3.5rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  padding: 4rem;
   @media screen and (max-width: 900px) {
     width: 100%;
     flex-direction: column;
+    margin-left: 0rem;
+    padding: 0;
   }
 }
 .app__skills-list {
@@ -28,6 +35,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   margin-right: 0rem;
+  margin-bottom: 2rem;
   @media screen and (max-width: 900px) {
     margin-right: 0;
     justify-content: center;
@@ -38,22 +46,28 @@
   flex-direction: column;
   text-align: center;
   margin: 0.7rem;
+  padding: 0.2rem;
   transition: all 0.3s ease-in-out;
 
+  svg {
+    color: rgba(185, 233, 252, 0.786);
+    color: black;
+    width: 50px;
+    height: 50px;
+  }
   div {
-    width: 90px;
-    height: 90px;
+    width: 6.2rem;
+    height: 6.2rem;
     border-radius: 50%;
-    background-color: black;
-    border: 2px solid rgba(46, 12, 199, 0.427);
+    background-color: rgba(200, 206, 255, 0.834);
 
-    img {
-      width: 50%;
-      height: 50%;
-      border-radius: 50%;
-    }
+    backdrop-filter: blur(14px);
+
+    box-shadow: 1px 0px 1px 1px rgba(0, 195, 255, 0.448);
+    border: none;
+
     &:hover {
-      box-shadow: 0 0 35px #2d099a98;
+      box-shadow: 5px 5px 8px rgba(63, 210, 255, 0.229);
     }
     @media screen and (min-width: 2000px) {
       width: 150px;

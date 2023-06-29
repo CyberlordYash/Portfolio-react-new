@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./Footer.scss";
 import AppWrap from "../../wrapper/AppWrap";
-import Email from "../../assets/email.png";
-import Mobile from "../../assets/mobile.png";
+
+import { CiMobile3 } from "react-icons/ci";
+import { HiMail } from "react-icons/hi";
 const Footer = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -30,14 +31,14 @@ const Footer = () => {
       <h2 className="head-text">Take a coffee & chat with me</h2>
       <div className="app__footer-cards">
         <div className="app__footer-card">
-          <img src={Email}></img>
+          <HiMail className="logos"></HiMail>
           <a href="mailto:yashsachan321@gmail.com" className="p-text">
             Yashsachan321@gmail.com
           </a>
         </div>
 
         <div className="app__footer-card">
-          <img src={Mobile}></img>
+          <CiMobile3 className="logos mobile"></CiMobile3>
           <a href="tel:+91 1234567890" className="p-text">
             Yashsachan321@gmail.com
           </a>

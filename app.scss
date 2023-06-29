@@ -1,8 +1,17 @@
 .app {
+  pointer-events: painted;
   background-color: var(--primary-color);
   font-family: var(--font-base);
   overflow: hidden;
+  scroll-behavior: smooth;
 }
+.circle-box {
+  background-color: blue;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
 .light {
   background-color: #edf2f8;
 
@@ -12,14 +21,16 @@
     color: black;
   }
   .chatbot {
-    background-color: rgb(220, 216, 216);
+    background-color: rgb(227, 231, 239);
+    color: black;
   }
   .icon {
     color: #100d25;
   }
   .app__social {
     div {
-      background-color: rgb(220, 216, 216);
+      background-color: rgba(213, 213, 216, 0.36);
+
       svg {
         color: #100d25;
       }
@@ -31,26 +42,38 @@
   .app__header-badge {
     .badge-cmp,
     .tag-cmp {
-      background-color: rgb(221, 220, 226);
+      background-image: none;
+      background-color: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(14px);
+      box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15);
     }
   }
   .app__header-circles {
     div {
-      background-color: rgb(221, 220, 226);
+      backdrop-filter: blur(14px);
+      background-color: rgba(255, 255, 255, 0.2);
+      box-shadow: 4px 4px 10px rgba(2, 1, 31, 0.3);
     }
   }
   .introduction {
+    box-shadow: 4px 4px 10px rgba(2, 1, 31, 0.3);
     span {
       color: #100d25;
     }
-    background-color: rgb(221, 220, 226);
+    background-color: rgb(227, 231, 239);
+    backdrop-filter: blur(14px);
   }
   .app__work-portfolio {
     .app__work-item {
-      background-color: rgb(221, 220, 226);
+      background-color: rgb(237, 242, 258);
+      box-shadow: 4px 4px 10px rgba(2, 1, 31, 0.3);
       &:hover {
-        background-color: rgb(198, 197, 203);
-        box-shadow: 0 0 25px rgba(73, 39, 196, 0.655);
+        background-color: rgb(237, 242, 258);
+
+        background-image: linear-gradient(
+          #b694ff58,
+          rgba(145, 211, 255, 0.345)
+        );
       }
     }
   }
@@ -63,10 +86,16 @@
     color: #100d25;
   }
   .app__skills-exp {
-    background-color: rgb(221, 220, 226);
+    background-color: rgb(227, 231, 239);
+    backdrop-filter: blur(14px);
+    box-shadow: 4px 4px 10px rgba(2, 1, 31, 0.3);
   }
   .app__testimonial-item {
-    background-color: rgb(221, 220, 226);
+    background-color: rgb(227, 231, 239);
+    backdrop-filter: blur(14px);
+    border: none;
+    box-shadow: 4px 4px 10px rgba(2, 1, 31, 0.3);
+    background-image: linear-gradient(#b694ff58, rgba(145, 211, 255, 0.345));
   }
   .p-text {
     color: black;
@@ -74,12 +103,64 @@
   .bold-text {
     color: black;
   }
+
   .app__footer-form {
-    background-color: rgb(221, 220, 226);
+    background-color: rgb(227, 231, 239);
+    backdrop-filter: blur(14px);
+    box-shadow: 4px 4px 10px rgba(2, 1, 31, 0.3);
     div {
       input,
       textarea {
-        background-color: rgb(198, 197, 203);
+        background-color: #edf2f8;
+      }
+    }
+    button {
+      color: white;
+    }
+  }
+  .app__skills-item {
+    div {
+      background-color: rgb(227, 231, 239);
+      backdrop-filter: blur(14px);
+      box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15);
+      border: none;
+    }
+  }
+  .app__skills-item {
+    svg {
+      color: rgba(15, 15, 55, 0.818);
+    }
+  }
+  .app__header-circles {
+    div {
+      svg {
+        color: rgba(15, 15, 55, 0.818);
+      }
+    }
+  }
+  .app__navbar-menu {
+    div {
+      background-color: #edf2f8;
+      svg {
+        background-color: #edf2f8;
+      }
+      ul {
+        li {
+          background-color: rgb(227, 231, 239);
+          box-shadow: 3px 3px 5px rgba(2, 1, 31, 0.2);
+          a {
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  .app__profile-item {
+    background-color: rgb(227, 231, 239);
+    box-shadow: 3px 3px 5px rgba(2, 1, 31, 0.3);
+    .icon {
+      .logo {
+        color: rgba(15, 15, 55, 0.818);
       }
     }
   }

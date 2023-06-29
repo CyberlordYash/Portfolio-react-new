@@ -3,46 +3,51 @@ import "./Work.scss";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import AppWrap from "../../wrapper/AppWrap";
-
-import Work04 from "../../assets/about04.png";
-import Gym from "../../assets/gym.jpg";
+import Bazaar from "../../assets/bazaar.jpg";
 import Todo from "../../assets/todo.png";
 import Jarvis from "../../assets/jarivs.jpg";
+
 const Work = () => {
-  const works = [
-    {
-      title: "Gym Shark",
-      description: "Modern Portfolio Website ",
-      imgURL: Gym,
-      tags: "UIEvent/Ux",
-      projectLink: "https://mega.nz/folder/xVBinJoC#IQ0QzdSLL-lb7VVTY7XbSQ",
-    },
-    {
-      title: "App Developer",
-      description: "I am a excellent App Developer",
-      imgURL: "",
-    },
-    {
-      title: "Web Developer",
-      description: "I am a excellent Web Developer",
-      imgURL: "",
-    },
-    {
-      title: "Web Developer",
-      description: "I am a excellent Web Developer",
-      imgURL: Work04,
-    },
-  ];
   const filterWork = [
+    {
+      title: "Ebazaar",
+      description:
+        "A robust CRUD e-commerce website, where users can browse products, add items to their cart, and complete purchases  ",
+      imgURL: Bazaar,
+      tags: "React+Next+Sanity",
+      projectLink: "https://dev-yash-ebazaar.netlify.app/",
+      codeLink: "https://github.com/CyberlordYash/ebazaar",
+    },
     {
       title: "Gym Shark",
       description:
         "A React website made to help individual focus on their health goals  ",
-      imgURL: Gym,
+      imgURL:
+        "https://github.com/CyberlordYash/Gym-shark/blob/master/src/assets/images/p.jpg?raw=true",
       tags: "React+Typescript+RapidAPIs+MUI",
       projectLink: "https://dev-yash-gymshark.netlify.app/",
       codeLink: "https://github.com/CyberlordYash/Gym-shark",
     },
+    {
+      title: "SummarizeIt",
+      description: "Summarize any sites with openAI GPT4",
+      imgURL:
+        "https://github.com/CyberlordYash/summarizeit/blob/master/src/assets/summarize.jpg?raw=true",
+      tags: "React+RapidAPIs+TailwindCSS",
+      projectLink: "https://dev-yash-summarizeit.netlify.app/",
+      codeLink: "https://github.com/CyberlordYash/summarizeit",
+    },
+    {
+      title: "News Express",
+      description:
+        "Stay informed and up-to-date with the latest news from around the world  ",
+      imgURL:
+        "https://github.com/CyberlordYash/News-express/blob/master/public/news.jpg?raw=true",
+      tags: "Not yet deployed",
+      projectLink: "https://dev-yash-newsexpress.netlify.app/",
+      codeLink: "https://github.com/CyberlordYash/News-express",
+    },
+
     {
       title: "JarvisGPT",
       description: "--",
@@ -61,25 +66,10 @@ const Work = () => {
       projectLink: "https://github.com/CyberlordYash/ToDo-Android",
       codeLink: "https://github.com/CyberlordYash/ToDo-Android",
     },
-
-    {
-      title: "Under Development",
-      description: "--",
-      imgURL: Work04,
-    },
   ];
   const [activeFilter, setActiveFilter] = useState("All");
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
-  const handleWorkFilter = (item) => {
-    setActiveFilter(item);
-    setAnimateCard([{ y: 100, opacity: 0 }]);
-    setTimeout(() => {
-      setAnimateCard([{ y: 0, opacity: 1 }]);
-      if (item === "All") {
-        //incomplete
-      }
-    }, 500);
-  };
+
   return (
     <div className="app__work">
       <h2 className="head-text">
@@ -92,7 +82,6 @@ const Work = () => {
         {["Web App", "Mobile App", "React JS", "All"].map((item, index) => (
           <div
             key={index}
-            onClick={() => handleWorkFilter(item)}
             className={`app__work-filter-item app__flex p-text ${
               activeFilter === item ? "item-active" : ""
             }`}
@@ -103,13 +92,18 @@ const Work = () => {
       </div>
       <motion.div
         animate={animateCard}
-        transition={{ duration: 0.7, delayChildren: 0.7 }}
+        transition={{
+          duration: 0,
+          delayChildren: 0.7,
+          type: "spring",
+          bounce: 1,
+        }}
         className="app__work-portfolio"
       >
         {filterWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
-              <img src={work.imgURL} alt={work.name}></img>
+              <img src={work.imgURL} loading="lazy" alt={work.name}></img>
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
                 transition={{
@@ -120,14 +114,7 @@ const Work = () => {
                 className="blur app__work-hover app__flex"
               >
                 <a href={work.projectLink}>
-                  <motion.div
-                    whileHover={{ scale: [1, 0.9] }}
-                    whileInView={{ scale: [0, 1] }}
-                    transition={{
-                      duration: 0.25,
-                    }}
-                    className="app__flex"
-                  >
+                  <motion.div className="app__flex">
                     <AiFillEye></AiFillEye>
                   </motion.div>
                 </a>

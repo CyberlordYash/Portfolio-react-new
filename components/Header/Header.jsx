@@ -1,12 +1,14 @@
 import React from "react";
-import { easeInOut, motion } from "framer-motion";
+import { color, easeInOut, motion } from "framer-motion";
 import Profile from "../../assets/profile.png";
 import Circle from "../../assets/circle.svg";
-import Flutter from "../../assets/flutter.png";
-import Redux from "../../assets/cpp.png";
-import Sass from "../../assets/react.png";
+import { TypeAnimation } from "react-type-animation";
 import "./Header.scss";
+import { FaReact } from "react-icons/fa";
+import { SiCplusplus } from "react-icons/si";
+import { TbBrandFlutter } from "react-icons/tb";
 import AppWrap from "../../wrapper/AppWrap";
+import MotionWrap from "../../wrapper/MotionWrap";
 const Header = () => {
   return (
     <div className="app__header app__flex">
@@ -19,13 +21,34 @@ const Header = () => {
           <div className="badge-cmp app__flex">
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
-              <p className="p-text">Hello, I am</p>
-              <h1 className="head-text">Yash</h1>
+              <p className="p-text">Hi There, I am</p>
+              <h1 className="head-text">Yash </h1>
             </div>
           </div>
           <div className="tag-cmp app__flex">
-            <p className="p-text">Web Developer</p>
-            <p className="p-text">App Developer</p>
+            <p className="p-text">I Am Into</p>
+            <TypeAnimation
+              sequence={[
+                // Same substring at the start will only be typed out once, initially
+                "Web Development",
+                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                "App Development",
+                1000,
+                "Blockchain",
+                1000,
+                "Tech Communities",
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              style={{
+                fontSize: "1.4em",
+                display: "inline-block",
+                color: "#313bac",
+                fontWeight: "800",
+              }}
+              repeat={Infinity}
+            />
           </div>
         </div>
       </motion.div>
@@ -55,16 +78,32 @@ const Header = () => {
       </motion.div>
       <motion.div
         whileInView={{ scale: [0, 1], opacity: [0, 1] }}
-        transition={{ duration: 1, ease: easeInOut }}
+        transition={{
+          duration: 1,
+          ease: easeInOut,
+          type: "spring",
+        }}
         className="app__header-circles"
       >
-        {[Flutter, Sass, Redux].map((circle, index) => (
-          <div className="circle-cmp app__flex" key={`circle-${index}`}>
-            <img src={circle}></img>
-          </div>
+        {[
+          <TbBrandFlutter></TbBrandFlutter>,
+          <FaReact></FaReact>,
+          <SiCplusplus></SiCplusplus>,
+        ].map((circle, index) => (
+          <motion.div
+            animate={{
+              rotate: [10, 0, 10],
+              scale: [1, 1.05, 1],
+            }}
+            transition={{ ease: "easeInOut", duration: 4, repeat: Infinity }}
+            className="circle-cmp app__flex"
+            key={`circle-${index}`}
+          >
+            {circle}
+          </motion.div>
         ))}
       </motion.div>
     </div>
   );
 };
-export default AppWrap(Header, "home");
+export default MotionWrap(AppWrap(Header, "home"), "");

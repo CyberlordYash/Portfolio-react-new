@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   background: #04071400;
   backdrop-filter: blur(4px);
   border: 0px solid rgba(255, 255, 255, 0.18);
@@ -35,10 +35,10 @@
     cursor: pointer;
     flex-direction: column;
     div {
-      width: 5px;
-      height: 5px;
+      width: 60%;
+      height: 2px;
       background: transparent;
-      border-radius: 50%;
+      border-radius: 10px;
       margin-bottom: 5px;
     }
     a {
@@ -63,14 +63,15 @@
   }
 }
 .app__navbar-menu {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  border-radius: 10% 10% 10% 40%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--secondary-color);
+
   svg {
     width: 70%;
     height: 70%;
@@ -85,22 +86,25 @@
     z-index: 5;
     padding: 1rem;
     width: 80%;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     flex-direction: column;
-    background: url("../../assets/bgWhite.png");
-    background-color: #040714f9;
+
     background-size: cover;
     background-repeat: repeat;
-
-    box-shadow: 0 0 20px rgba(168, 170, 170, 0.15);
+    box-shadow: 1px 1px 1px 2px rgba(0, 195, 255, 0.448);
+    background-color: rgba(0, 0, 0, 0.955);
+    border-radius: 0 0 0 40px;
+    backdrop-filter: blur(1px);
     svg {
-      width: 35px;
-      height: 35px;
+      width: 45px;
+      height: 45px;
       color: var(--secondary-color);
       margin: 0.5rem 1rem;
+      border-radius: 10px;
+      background-color: #040714f9;
     }
 
     ul {
@@ -113,8 +117,17 @@
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
+
       li {
-        margin: 1rem;
+        margin: 1rem 1rem 0.01rem 1rem;
+        padding: 1.2rem;
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        // border: 1px solid rgba(255, 255, 255, 0.51);
+        // border-color: #0079ff;
+
+        background-color: #100d25;
         a {
           color: gray;
           text-decoration: none;

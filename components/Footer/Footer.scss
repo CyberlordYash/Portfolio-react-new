@@ -1,3 +1,11 @@
+#contact {
+  position: relative;
+
+  background-image: url(../../assets/Shapes.svg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
 .app__footer {
   flex: 1;
   width: 100%;
@@ -20,8 +28,17 @@
     padding: 1rem;
     border-radius: 10px;
     cursor: pointer;
-    background-color: rgba(93, 4, 4, 0.578);
+    background-color: rgba(163, 12, 12, 0.333);
     transition: all 0.3s ease-in-out;
+    .logos {
+      width: 65px;
+      height: 65px;
+      margin: 0 0.8rem;
+      color: rgb(144, 36, 36);
+    }
+    .mobile {
+      color: rgb(4, 4, 114);
+    }
     img {
       width: 65px;
       height: 65px;
@@ -47,7 +64,7 @@
   }
 }
 .app__footer-cards .app__footer-card:last-child {
-  background-color: #065160a3;
+  background-color: #0a788e7c;
 }
 
 .app__footer-form {

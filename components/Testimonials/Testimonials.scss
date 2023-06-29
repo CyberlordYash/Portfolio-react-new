@@ -15,8 +15,10 @@
   width: 60%;
 
   min-height: 320px;
-  background-color: #100c24;
-  border: solid 1px rgb(85, 0, 255);
+  background-color: rgba(0, 18, 33, 0.163);
+  box-shadow: 1px 0px 1px 0.6px rgba(0, 195, 255, 0.448);
+  backdrop-filter: blur(30px);
+  border: solid 0.5px rgb(85, 0, 255);
   display: flex;
   padding: 2rem;
   border-radius: 16px;

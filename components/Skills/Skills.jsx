@@ -1,142 +1,141 @@
 import React from "react";
+import { FaReact, FaNodeJs, FaAws, FaGit } from "react-icons/fa";
+import MotionWrap from "../../wrapper/MotionWrap";
+import {
+  TbBrandCpp,
+  TbBrandFlutter,
+  TbBrandMongodb,
+  TbBrandJavascript,
+  TbBrandTypescript,
+  TbBrandGithub,
+  TbBrandCss3,
+  TbBrandRedux,
+  TbSql,
+} from "react-icons/tb";
+
+import { SiExpress, SiDart, SiFirebase, SiHtml5 } from "react-icons/si";
 import { useState } from "react";
 import { Tooltip } from "react-tooltip";
 import "./Skills.scss";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import AppWrap from "../../wrapper/AppWrap";
-import Skill01 from "../../assets/react.png";
-import Skill02 from "../../assets/cpp.png";
-import Skill03 from "../../assets/flutter.png";
-import Skill04 from "../../assets/node.png";
-import Skill05 from "../../assets/javascript.png";
-import Skill06 from "../../assets/typescript.png";
-import Skill07 from "../../assets/git.png";
-import Skill08 from "../../assets/css.png";
-import Skill09 from "../../assets/redux.png";
-import Skill10 from "../../assets/html.png";
-import Skill11 from "../../assets/github.png";
-import Skill12 from "../../assets/sql.png";
-import Skill13 from "../../assets/mongo.png";
-import Skill14 from "../../assets/express.png";
-import Skill15 from "../../assets/dart.png";
-import Skill16 from "../../assets/firebase.png";
-import Skill17 from "../../assets/aws.png";
+
 const Skills = () => {
   const skills = [
     {
       name: "React",
       description: "Modern Portfolio Website ",
-      imgURL: Skill01,
+      imgURL: <FaReact></FaReact>,
       tags: "UIEvent/Ux",
       bgColor: "white",
     },
     {
       name: "C++",
       description: "Modern Portfolio Website ",
-      imgURL: Skill02,
+      imgURL: <TbBrandCpp></TbBrandCpp>,
       tags: "UIEvent/Ux",
       bgColor: "white",
     },
     {
       name: "Flutter",
       description: "Modern Portfolio Website ",
-      imgURL: Skill03,
+      imgURL: <TbBrandFlutter></TbBrandFlutter>,
       tags: "UIEvent/Ux",
       bgColor: "white",
     },
     {
       name: "Node JS",
       description: "Modern Portfolio Website ",
-      imgURL: Skill04,
+      imgURL: <FaNodeJs></FaNodeJs>,
       tags: "UIEvent/Ux",
       bgColor: "white",
     },
     {
       name: "Mongo DB",
       description: "Modern Portfolio Website ",
-      imgURL: Skill13,
+      imgURL: <TbBrandMongodb></TbBrandMongodb>,
       tags: "UIEvent/Ux",
       bgColor: "white",
     },
     {
       name: "Express JS",
       description: "Modern Portfolio Website ",
-      imgURL: Skill14,
+      imgURL: <SiExpress></SiExpress>,
       tags: "UIEvent/Ux",
       bgColor: "white",
     },
     {
       name: "AWS",
       description: "Modern Portfolio Website ",
-      imgURL: Skill17,
+      imgURL: <FaAws></FaAws>,
       tags: "UIEvent/Ux",
       bgColor: "white",
     },
     {
       name: "Javascript",
       description: "Modern Portfolio Website ",
-      imgURL: Skill05,
+      imgURL: <TbBrandJavascript></TbBrandJavascript>,
       tags: "UIEvent/Ux",
       bgColor: "white",
     },
     {
       name: "Typescript",
       description: "Modern Portfolio Website ",
-      imgURL: Skill06,
+      imgURL: <TbBrandTypescript></TbBrandTypescript>,
       tags: "UIEvent/Ux",
       bgColor: "white",
     },
     {
       name: "Dart",
       description: "Modern Portfolio Website ",
-      imgURL: Skill15,
+      imgURL: <SiDart></SiDart>,
       tags: "UIEvent/Ux",
       bgColor: "white",
     },
     {
       name: "GitHub",
       description: "Modern Portfolio Website ",
-      imgURL: Skill11,
+      imgURL: <TbBrandGithub></TbBrandGithub>,
       tags: "UIEvent/Ux",
       bgColor: "white",
     },
     {
       name: "Git",
       description: "Modern Portfolio Website ",
-      imgURL: Skill07,
+      imgURL: <FaGit></FaGit>,
       tags: "UIEvent/Ux",
       bgColor: "white",
     },
     {
       name: "Firebase",
       description: "Modern Portfolio Website ",
-      imgURL: Skill16,
+      imgURL: <SiFirebase></SiFirebase>,
       tags: "UIEvent/Ux",
       bgColor: "white",
     },
     {
       name: "CSS",
       description: "I am a excellent App Developer",
-      imgURL: Skill08,
+      imgURL: <TbBrandCss3></TbBrandCss3>,
       bgColor: "white",
     },
     {
       name: "Redux",
       description: "I am a excellent Web Developer",
-      imgURL: Skill09,
+      imgURL: <TbBrandRedux></TbBrandRedux>,
       bgColor: "white",
     },
     {
       name: "HTML",
       description: "I am a excellent Web Developer",
-      imgURL: Skill10,
+      imgURL: <SiHtml5></SiHtml5>,
       bgColor: "white",
     },
     {
       name: "SQL",
       description: "I am a excellent Web Developer",
-      imgURL: Skill12,
+      imgURL: <TbSql></TbSql>,
       bgColor: "white",
     },
   ];
@@ -166,15 +165,14 @@ const Skills = () => {
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
           {skills.map((skill) => (
-            <motion.div
-              whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 0.5 }}
-              className="app__skills-item app__flex"
-              key={skill.name}
-            >
-              <div className="app__flex" style={{ backgroundColor: "black" }}>
-                <img src={skill.imgURL}></img>
-              </div>
+            <motion.div className="app__skills-item app__flex" key={skill.name}>
+              <motion.div
+                whileHover={{ scale: 1.15 }}
+                transition={{ duration: 0.5, type: "tween" }}
+                className="app__flex"
+              >
+                {skill.imgURL}
+              </motion.div>
               <p className="p-text">{skill.name}</p>
             </motion.div>
           ))}
@@ -184,8 +182,6 @@ const Skills = () => {
           {experience.map((work) => (
             <div>
               <motion.div
-                whileInView={{ opacity: [0, 1] }}
-                transition={{ duration: 0.5 }}
                 className="app__skills-exp-work"
                 data-tip
                 data-for={work.name}
@@ -210,4 +206,4 @@ const Skills = () => {
   );
 };
 
-export default AppWrap(Skills, "skills");
+export default MotionWrap(AppWrap(Skills, "skills"), "");

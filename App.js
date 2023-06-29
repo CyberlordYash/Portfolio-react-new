@@ -9,7 +9,7 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
 import Chatbot from "./components/chatbot/Chatbot.jsx";
 import Lottie from "lottie-react";
-
+import Footerend from "./components/Footerend/Footerend";
 import Loading from "./assets/loading.json";
 
 const App = () => {
@@ -18,7 +18,7 @@ const App = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2800);
+    }, 2000);
   }, []);
   const [lightMode, setLightMode] = useState("");
   const setLightModeHandler = (data) => {
@@ -50,6 +50,7 @@ const App = () => {
           <Testimonials></Testimonials>
 
           <Footer></Footer>
+          <Footerend></Footerend>
         </div>
       )}
     </div>
