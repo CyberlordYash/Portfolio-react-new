@@ -5,19 +5,20 @@ import { BiSolidUpArrowCircle } from "react-icons/bi";
 import { AiOutlineArrowUp } from "react-icons/ai";
 const Footerend = () => {
   return (
-    <div className="footer-end">
+    <div className="top-text footer-end">
+      Thanks for visiting my Portfolio
       <div className="footer-mid">
-        <div>
-          <div className="box end-text">Yash Portfolio</div>
+        <div className="box">
+          <div className=" end-text">Yash Portfolio</div>
         </div>
         <div>
           <a href="#home" className="box p-text mover">
             <AiOutlineArrowUp className="up-logo"></AiOutlineArrowUp>
           </a>
         </div>
-        <div className=" end-text">
+        <div className="box end-text">
           <div>
-            <FaCity className="box city-logo"></FaCity>
+            <FaCity className=" city-logo"></FaCity>
           </div>
           <div>Noida, India</div>
         </div>

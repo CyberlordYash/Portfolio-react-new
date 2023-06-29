@@ -24,6 +24,7 @@
   flex-wrap: wrap;
   margin: 0rem;
   .app__footer-card {
+    width: 30%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -56,7 +57,8 @@
       font-weight: 500;
     }
     &:hover {
-      box-shadow: 0 0 25px rgba(123, 63, 157, 0.421);
+      box-shadow: 0 0 5px rgba(157, 63, 63, 0.421);
+      width: 35%;
     }
     @media screen and (max-width: 450px) {
       width: 90%;

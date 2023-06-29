@@ -1,17 +1,24 @@
 .footer-end {
-  background-color: rgba(1, 0, 33, 0.881);
-  backdrop-filter: blur(20px);
-  box-shadow: 1px 0px 1px 1px rgba(0, 195, 255, 0.848);
+  background-image: url("../Skills/b.svg");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  background-color: rgba(1, 0, 33, 0.981);
 
-  width: 100%;
-
+  box-shadow: 1px 0px 1px 0.1px rgba(0, 195, 255, 0.848);
+  width: 95%;
+  border-radius: 10px;
+  margin: 1rem;
   height: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 1rem 2rem 2rem 2rem;
+  position: relative;
+  z-index: 500;
 }
 .footer-mid {
+  border-radius: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -46,4 +53,8 @@
   width: 40px;
   height: 40px;
   color: rgba(255, 255, 255, 0.733);
+}
+.top-text {
+  text-align: center;
+  color: rgba(216, 216, 216, 0.678);
 }

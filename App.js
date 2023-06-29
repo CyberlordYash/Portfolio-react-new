@@ -28,31 +28,30 @@ const App = () => {
 
   return (
     <div className={`app ${lightMode}`}>
-      {loading ? (
+      {loading && (
         <div className="loading">
           <Lottie animationData={Loading} className="lottie"></Lottie>
         </div>
-      ) : (
-        <div>
-          <Chatbot
-            setLightModeHandler={setLightModeHandler}
-            lightMode={lightMode}
-          ></Chatbot>
-          <Navbar />
-
-          <Header></Header>
-          <About></About>
-
-          <Work></Work>
-
-          <Skills></Skills>
-
-          <Testimonials></Testimonials>
-
-          <Footer></Footer>
-          <Footerend></Footerend>
-        </div>
       )}
+      <div>
+        <Chatbot
+          setLightModeHandler={setLightModeHandler}
+          lightMode={lightMode}
+        ></Chatbot>
+        <Navbar />
+
+        <Header></Header>
+        <About></About>
+
+        <Work></Work>
+
+        <Skills></Skills>
+
+        <Testimonials></Testimonials>
+
+        <Footer></Footer>
+        <Footerend></Footerend>
+      </div>
     </div>
   );
 };

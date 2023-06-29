@@ -68,7 +68,6 @@ const Work = () => {
     },
   ];
   const [activeFilter, setActiveFilter] = useState("All");
-  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   return (
     <div className="app__work">
@@ -90,20 +89,11 @@ const Work = () => {
           </div>
         ))}
       </div>
-      <motion.div
-        animate={animateCard}
-        transition={{
-          duration: 0,
-          delayChildren: 0.7,
-          type: "spring",
-          bounce: 1,
-        }}
-        className="app__work-portfolio"
-      >
+      <motion.div className="app__work-portfolio">
         {filterWork.map((work, index) => (
           <div className="app__work-item app__flex" key={index}>
             <div className="app__work-img app__flex">
-              <img src={work.imgURL} loading="lazy" alt={work.name}></img>
+              <img src={work.imgURL} alt={work.name}></img>
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
                 transition={{
