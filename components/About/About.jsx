@@ -87,6 +87,7 @@ const About = () => {
             </motion.div>
           ))}
         </div>
+        z
       </div>
     </div>
   );

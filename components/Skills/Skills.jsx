@@ -14,8 +14,7 @@ import {
 } from "react-icons/tb";
 
 import { SiExpress, SiDart, SiFirebase, SiHtml5 } from "react-icons/si";
-import { useState } from "react";
-import { Tooltip } from "react-tooltip";
+
 import "./Skills.scss";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
@@ -160,52 +159,66 @@ const Skills = () => {
     },
   ];
   return (
-    <div className="app__skills">
-      <h2 className="head-text">
-        {" "}
-        Skills and <span>Experience</span>
-      </h2>
-      <div className="app__skills-container">
-        <motion.div className="app__skills-list">
-          {skills.map((skill) => (
-            <motion.div className="app__skills-item app__flex" key={skill.name}>
-              <motion.div
-                whileHover={{ scale: 1.15 }}
-                transition={{ duration: 0.5, type: "tween" }}
-                className="app__flex"
-              >
-                {skill.imgURL}
-              </motion.div>
-              <p className="p-text">{skill.name}</p>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        <motion.div className="app__skills-exp">
-          {experience.map((work) => (
-            <div>
-              <motion.div
-                className="app__skills-exp-work"
-                data-tip
-                data-for={work.name}
-                key={work.name}
-              >
-                <h4 className="bold-text">{work.name}</h4>
-                <p className="p-text">{work.company}</p>
-              </motion.div>
-              <Tooltip
-                id={work.name}
-                effect="solid"
-                arrowColor="#fff"
-                className="skills-tooltip"
-              >
-                {work.desc}
-              </Tooltip>
-            </div>
-          ))}
-        </motion.div>
+    <>
+      <div className="app__skills">
+        <h2 className="head-text"> Skills</h2>
+        <div className="app__skills-container">
+          <div className="app__skills-list">
+            {skills.map((skill) => (
+              <div className="app__skills-item app__flex" key={skill.name}>
+                <motion.div
+                  whileHover={{ scale: 1.15 }}
+                  transition={{ duration: 0.5, type: "tween" }}
+                  className="app__flex"
+                >
+                  {skill.imgURL}
+                </motion.div>
+                <p className="p-text">{skill.name}</p>
+              </div>
+            ))}
+          </div>
+          s{" "}
+        </div>
       </div>
-    </div>
+      <div className="app__skills">
+        <h2 className="gap head-text">
+          <span>Experience</span>
+        </h2>
+        <div className="app__skills-container">
+          <div>
+            <div className="mid-line"></div>
+            <motion.div
+              whileInView={{ opacity: [0, 1] }}
+              transition={{ duration: 0.5, type: "tween" }}
+              className="left-container"
+            >
+              <h2 className="bold-text">Work</h2>
+              <p className="p-text">Company</p>
+              <ul>
+                <li className="p-text">Task1</li>
+                <li className="p-text">Task2</li>
+                <li className="p-text">Task3</li>
+              </ul>
+            </motion.div>
+
+            <motion.div
+              whileInView={{ opacity: [0, 1] }}
+              transition={{ duration: 0.5, type: "tween" }}
+              className="right-container"
+            >
+              {" "}
+              <h2 className="bold-text">Work</h2>
+              <p className="p-text">Company</p>
+              <ul>
+                <li className="p-text">Task1</li>
+                <li className="p-text">Task2</li>
+                <li className="p-text">Task3</li>
+              </ul>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

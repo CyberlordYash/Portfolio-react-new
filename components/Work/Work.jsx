@@ -6,7 +6,9 @@ import AppWrap from "../../wrapper/AppWrap";
 import Bazaar from "../../assets/bazaar.jpg";
 import Todo from "../../assets/todo.png";
 import Jarvis from "../../assets/jarivs.jpg";
-
+import Summary from "../../assets/Checklist.jpg";
+import Gym from "../../assets/p.jpg";
+import News from "../../assets/news.jpg";
 const Work = () => {
   const filterWork = [
     {
@@ -22,8 +24,7 @@ const Work = () => {
       title: "Gym Shark",
       description:
         "A React website made to help individual focus on their health goals  ",
-      imgURL:
-        "https://github.com/CyberlordYash/Gym-shark/blob/master/src/assets/images/p.jpg?raw=true",
+      imgURL: Gym,
       tags: "React+Typescript+RapidAPIs+MUI",
       projectLink: "https://dev-yash-gymshark.netlify.app/",
       codeLink: "https://github.com/CyberlordYash/Gym-shark",
@@ -31,8 +32,7 @@ const Work = () => {
     {
       title: "SummarizeIt",
       description: "Summarize any sites with openAI GPT4",
-      imgURL:
-        "https://github.com/CyberlordYash/summarizeit/blob/master/src/assets/summarize.jpg?raw=true",
+      imgURL: Summary,
       tags: "React+RapidAPIs+TailwindCSS",
       projectLink: "https://dev-yash-summarizeit.netlify.app/",
       codeLink: "https://github.com/CyberlordYash/summarizeit",
@@ -41,8 +41,7 @@ const Work = () => {
       title: "News Express",
       description:
         "Stay informed and up-to-date with the latest news from around the world  ",
-      imgURL:
-        "https://github.com/CyberlordYash/News-express/blob/master/public/news.jpg?raw=true",
+      imgURL: News,
       tags: "Not yet deployed",
       projectLink: "https://dev-yash-newsexpress.netlify.app/",
       codeLink: "https://github.com/CyberlordYash/News-express",
@@ -95,16 +94,22 @@ const Work = () => {
             <div className="app__work-img app__flex">
               <img src={work.imgURL} alt={work.name}></img>
               <motion.div
-                whileHover={{ opacity: [0, 1] }}
+                whileHover={{ y: [10, 0], opacity: [0, 1] }}
                 transition={{
                   duration: 0.35,
                   ease: "easeInOut",
-                  staggeredChildren: 0.5,
                 }}
                 className="blur app__work-hover app__flex"
               >
                 <a href={work.projectLink}>
-                  <motion.div className="app__flex">
+                  <motion.div
+                    whileHover={{ scale: [1, 0.9] }}
+                    whileInView={{ scale: [0, 1] }}
+                    transition={{
+                      duration: 0.25,
+                    }}
+                    className="app__flex"
+                  >
                     <AiFillEye></AiFillEye>
                   </motion.div>
                 </a>
