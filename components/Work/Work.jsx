@@ -1,21 +1,22 @@
 import React, { useState } from "react";
 import "./Work.scss";
+import Market from "../../assets/market.svg";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import AppWrap from "../../wrapper/AppWrap";
-import Bazaar from "../../assets/bazaar.jpg";
-import Todo from "../../assets/todo.png";
-import Jarvis from "../../assets/jarivs.jpg";
-import Summary from "../../assets/Checklist.jpg";
-import Gym from "../../assets/p.jpg";
-import News from "../../assets/news.jpg";
+import Todo from "../../assets/todo.svg";
+import Jarvis from "../../assets/ai.svg";
+import Summary from "../../assets/summary.svg";
+
+import News from "../../assets/news.svg";
+import Gym from "../../assets/gym.svg";
 const Work = () => {
   const filterWork = [
     {
       title: "Ebazaar",
       description:
         "A robust CRUD e-commerce website, where users can browse products, add items to their cart, and complete purchases  ",
-      imgURL: Bazaar,
+      imgURL: Market,
       tags: "React+Next+Sanity",
       projectLink: "https://dev-yash-ebazaar.netlify.app/",
       codeLink: "https://github.com/CyberlordYash/ebazaar",

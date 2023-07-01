@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Footer.scss";
 import AppWrap from "../../wrapper/AppWrap";
-
+import Contact from "../../assets/contact.svg";
 import { CiMobile3 } from "react-icons/ci";
 import { HiMail } from "react-icons/hi";
 const Footer = () => {
@@ -29,6 +29,7 @@ const Footer = () => {
   return (
     <>
       <h2 className="head-text">Take a coffee & chat with me</h2>
+
       <div className="app__footer">
         <div className="app__footer-cards">
           <div className="app__footer-card">
@@ -47,6 +48,7 @@ const Footer = () => {
         </div>
         {!isFormSUbmitted ? (
           <div className="app__footer-form app__flex">
+            <img className="contact" src={Contact}></img>
             <div className="app__flex">
               <input
                 className="p-text"

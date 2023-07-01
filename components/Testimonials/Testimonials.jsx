@@ -2,28 +2,23 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import AppWrap from "../../wrapper/AppWrap";
 import "./Testimonials.scss";
-import About05 from "../../assets/about05.jpg";
+import About05 from "../../assets/testimonial.svg";
 import test03 from "../../assets/iiit.png";
 import test04 from "../../assets/school.png";
-import test05 from "../../assets/bda.jpeg";
+
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi";
 const Testimonials = () => {
   const brands = [
     {
       name: "AMAZON",
-      company: "Netflix",
+      company: "IIIT",
       feedback: "Yash is awesome",
       imgUrl: test04,
     },
-    {
-      name: "Yash",
-      company: "Netflix",
-      feedback: "Yash is awesome",
-      imgUrl: test05,
-    },
+
     {
       name: "AMAZON",
-      company: "Netflix",
+      company: "IIIT sonepat",
       feedback: "Yash is awesome",
       imgUrl: test03,
     },
@@ -31,13 +26,13 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: "Yash",
-      company: "Netflix",
+      company: "IIIT",
       feedback: "Yash is awesome",
       imgUrl: About05,
     },
     {
       name: "Sachan",
-      company: "Netflix",
+      company: "IIIT sonepat",
       feedback: "Yash is awesome",
       imgUrl: About05,
     },

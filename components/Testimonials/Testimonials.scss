@@ -1,10 +1,17 @@
-.bgc {
+#testimonials {
   background-image: url("./m.svg");
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
   width: 100%;
   height: 100%;
+}
+.bgc {
+  width: 100%;
+  background-color: rgba(0, 18, 33, 0.316);
+  backdrop-filter: blur(3px);
+  box-shadow: 1px 0px 1px 1px rgba(0, 195, 255, 0.448);
+  border-radius: 10px;
 }
 .app__testimonial {
   flex: 1;
@@ -13,12 +20,12 @@
 }
 .app__testimonial-item {
   width: 60%;
-
+  margin: 1rem;
   min-height: 320px;
-  background-color: rgba(0, 18, 33, 0.163);
+  background-color: #100d25;
   box-shadow: 1px 0px 1px 0.6px rgba(0, 195, 255, 0.448);
   backdrop-filter: blur(30px);
-  border: solid 0.5px rgb(85, 0, 255);
+  border-bottom: 10px solid rgba(0, 195, 255, 0.248);
   display: flex;
   padding: 2rem;
   border-radius: 16px;
@@ -38,7 +45,7 @@
     }
   }
   @media screen and (max-width: 850px) {
-    width: 100%;
+    width: 90%;
   }
   @media screen and (max-width: 600px) {
     flex-direction: column;

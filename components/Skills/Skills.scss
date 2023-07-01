@@ -49,7 +49,9 @@
   margin: 0.7rem;
   padding: 0 0.8rem;
   transition: all 0.3s ease-in-out;
-
+  @media screen and (max-width: 900px) {
+    padding: 0.2rem;
+  }
   svg {
     color: rgba(185, 233, 252, 0.786);
     color: black;
@@ -73,6 +75,10 @@
     @media screen and (min-width: 2000px) {
       width: 150px;
       height: 150px;
+    }
+    @media screen and (max-width: 900px) {
+      width: 4.5rem;
+      height: 4.5rem;
     }
   }
   p {

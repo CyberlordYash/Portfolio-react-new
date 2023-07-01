@@ -1,5 +1,5 @@
 import React from "react";
-import { color, easeInOut, motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 import Profile from "../../assets/profile.png";
 import Circle from "../../assets/circle.svg";
 import { TypeAnimation } from "react-type-animation";
@@ -9,6 +9,7 @@ import { SiCplusplus } from "react-icons/si";
 import { TbBrandFlutter } from "react-icons/tb";
 import AppWrap from "../../wrapper/AppWrap";
 import MotionWrap from "../../wrapper/MotionWrap";
+import Hero from "../../assets/hero.svg";
 const Header = () => {
   return (
     <div className="app__header app__flex">
@@ -67,7 +68,7 @@ const Header = () => {
             repeat: Infinity,
           }}
         >
-          <img src={Profile} alt="profile-bg"></img>
+          <img src={Hero} alt="profile-bg"></img>
         </motion.div>
         <motion.img
           whileInView={{ scale: [0, 1] }}

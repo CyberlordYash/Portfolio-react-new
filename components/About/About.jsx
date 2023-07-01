@@ -3,12 +3,12 @@ import "./About.scss";
 
 import { motion } from "framer-motion";
 import AppWrap from "../../wrapper/AppWrap";
-import Lottie from "lottie-react";
-import Laptop from "../../assets/laptop.json";
+
 import { AiFillSetting, AiFillAndroid } from "react-icons/ai";
 import { SiBlockchaindotcom } from "react-icons/si";
 import { BsFillPenFill } from "react-icons/bs";
 import MotionWrap from "../../wrapper/MotionWrap";
+import Intro from "../../assets/intro.svg";
 const abouts = [
   {
     title: "Web Developer",
@@ -39,7 +39,7 @@ const About = () => {
       </h2>
       <div className="transparent">
         <div className="introduction">
-          <Lottie animationData={Laptop} className="laptop"></Lottie>
+          <img src={Intro} className="intro"></img>
 
           <p className="p-texts">
             I am<span> Yash Sachan</span> pursuing BTech in <span>CSE</span>{" "}
