@@ -15,11 +15,12 @@ const Work = () => {
     {
       title: "Ebazaar",
       description:
-        "A robust CRUD e-commerce website, where users can browse products, add items to their cart, and complete purchases  ",
+        "A robust CRUD e-commerce website,browse products, add items to their cart, and complete purchases  ",
       imgURL: Market,
       tags: "React+Next+Sanity",
       projectLink: "https://dev-yash-ebazaar.netlify.app/",
       codeLink: "https://github.com/CyberlordYash/ebazaar",
+      bgColor: "#ffc2c87b",
     },
     {
       title: "Gym Shark",
@@ -29,6 +30,7 @@ const Work = () => {
       tags: "React+Typescript+RapidAPIs+MUI",
       projectLink: "https://dev-yash-gymshark.netlify.app/",
       codeLink: "https://github.com/CyberlordYash/Gym-shark",
+      bgColor: "#ff638a7e",
     },
     {
       title: "SummarizeIt",
@@ -37,6 +39,7 @@ const Work = () => {
       tags: "React+RapidAPIs+TailwindCSS",
       projectLink: "https://dev-yash-summarizeit.netlify.app/",
       codeLink: "https://github.com/CyberlordYash/summarizeit",
+      bgColor: "#db63ff7e",
     },
     {
       title: "News Express",
@@ -46,6 +49,7 @@ const Work = () => {
       tags: "Not yet deployed",
       projectLink: "https://dev-yash-newsexpress.netlify.app/",
       codeLink: "https://github.com/CyberlordYash/News-express",
+      bgColor: "#71d8fa7e",
     },
 
     {
@@ -57,6 +61,7 @@ const Work = () => {
         "A simple ChatGPT clone that answers all of your daily questions  ",
       projectLink: "https://dev-yash-jarvisgpt.netlify.app/",
       codeLink: "https://github.com/CyberlordYash/JarvisGPT",
+      bgColor: "#7f7f7f7e",
     },
     {
       title: "ToDo app",
@@ -65,6 +70,7 @@ const Work = () => {
       tags: "Flutter+Firebase",
       projectLink: "https://github.com/CyberlordYash/ToDo-Android",
       codeLink: "https://github.com/CyberlordYash/ToDo-Android",
+      bgColor: "#7a71fa7e",
     },
   ];
   const [activeFilter, setActiveFilter] = useState("All");
@@ -91,7 +97,11 @@ const Work = () => {
       </div>
       <motion.div className="app__work-portfolio">
         {filterWork.map((work, index) => (
-          <div className="app__work-item app__flex" key={index}>
+          <div
+            style={{ backgroundColor: work.bgColor }}
+            className="app__work-item app__flex"
+            key={index}
+          >
             <div className="app__work-img app__flex">
               <img src={work.imgURL} alt={work.name}></img>
               <motion.div

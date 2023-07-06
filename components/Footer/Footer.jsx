@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Footer.scss";
 import AppWrap from "../../wrapper/AppWrap";
-import Contact from "../../assets/contact.svg";
 import { CiMobile3 } from "react-icons/ci";
 import { HiMail } from "react-icons/hi";
 const Footer = () => {
@@ -48,7 +47,6 @@ const Footer = () => {
         </div>
         {!isFormSUbmitted ? (
           <div className="app__footer-form app__flex">
-            <img className="contact" src={Contact}></img>
             <div className="app__flex">
               <input
                 className="p-text"
@@ -78,8 +76,15 @@ const Footer = () => {
                 onChange={handleChangeInput}
               ></textarea>
             </div>
-            <button type="button" className="p-text" onClick={handleSubmit}>
-              {loading ? "Sending" : "Send Message"}
+
+            <button onClick={handleSubmit} class="button">
+              <span class="button_lg">
+                <span class="button_sl"></span>
+                <span class="button_text">
+                  {" "}
+                  {loading ? "Sending" : "Send Message"}
+                </span>
+              </span>
             </button>
           </div>
         ) : (

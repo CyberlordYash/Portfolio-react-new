@@ -8,9 +8,8 @@ import Skills from "./components/Skills/Skills";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
 import Chatbot from "./components/chatbot/Chatbot.jsx";
-import Lottie from "lottie-react";
+
 import Footerend from "./components/Footerend/Footerend";
-import Loading from "./assets/loading.json";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -28,30 +27,31 @@ const App = () => {
 
   return (
     <div className={`app ${lightMode}`}>
-      {loading && (
+      {loading ? (
         <div className="loading">
-          <Lottie animationData={Loading} className="lottie"></Lottie>
+          <div className="lottie loader"></div>
+        </div>
+      ) : (
+        <div>
+          <Chatbot
+            setLightModeHandler={setLightModeHandler}
+            lightMode={lightMode}
+          ></Chatbot>
+          <Navbar />
+
+          <Header></Header>
+          <About></About>
+
+          <Work></Work>
+
+          <Skills></Skills>
+
+          <Testimonials></Testimonials>
+
+          <Footer></Footer>
+          <Footerend></Footerend>
         </div>
       )}
-      <div>
-        <Chatbot
-          setLightModeHandler={setLightModeHandler}
-          lightMode={lightMode}
-        ></Chatbot>
-        <Navbar />
-
-        <Header></Header>
-        <About></About>
-
-        <Work></Work>
-
-        <Skills></Skills>
-
-        <Testimonials></Testimonials>
-
-        <Footer></Footer>
-        <Footerend></Footerend>
-      </div>
     </div>
   );
 };

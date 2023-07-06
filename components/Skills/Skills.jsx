@@ -192,7 +192,7 @@ const Skills = () => {
               transition={{ duration: 0.5, type: "tween" }}
               className="left-container"
             >
-              <h2 className="bold-text">Work</h2>
+              <h2 className="work-head bold-text">Work</h2>
               <p className="p-text">Company</p>
               <ul>
                 <li className="p-text">Task1</li>
@@ -207,7 +207,7 @@ const Skills = () => {
               className="right-container"
             >
               {" "}
-              <h2 className="bold-text">Work</h2>
+              <h2 className="work-head bold-text">Work</h2>
               <p className="p-text">Company</p>
               <ul>
                 <li className="p-text">Task1</li>

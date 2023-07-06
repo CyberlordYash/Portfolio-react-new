@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Modal.scss";
-import { useScroll } from "framer-motion";
+
 import { MdDarkMode } from "react-icons/md";
 import { BsSunFill } from "react-icons/bs";
 import { AiOutlineFileDone } from "react-icons/ai";

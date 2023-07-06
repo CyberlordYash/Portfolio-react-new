@@ -1,15 +1,11 @@
 .footer-end {
-  background-image: url("../../assets/Circuit.svg");
-  background-size: cover;
-  background-repeat: repeat;
-  background-position: center;
-  background-color: rgba(1, 0, 33, 0.981);
+  border-radius: 40px;
+  background: #313bac;
 
-  box-shadow: 1px 0px 1px 0.1px rgba(0, 195, 255, 0.848);
-  width: 95%;
+  width: 100%;
   border-radius: 10px;
-  margin: 1rem;
-  height: 25vh;
+
+  height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,12 +14,16 @@
   z-index: 500;
 }
 .footer-mid {
+  border-radius: 40px;
+  background: #313bac;
+  box-shadow: 5px 5px 10px #2a3292, -5px -5px 10px #3844c6;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem;
+  margin: 1rem;
 }
 .end-text {
   display: flex;
@@ -39,15 +39,18 @@
   align-items: center;
 }
 .city-logo {
-  width: 5rem;
+  margin-right: 1rem;
 }
 .mover {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
   width: 50px;
   height: 50px;
-  background-color: rgb(1, 1, 36);
+  background: #2b38c6;
+  box-shadow: 5px 5px 10px #2a3292, -5px -5px 10px #3844c6;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 1px 0px 1px 1px rgba(0, 195, 255, 0.448);
 }
 .up-logo {
   width: 40px;

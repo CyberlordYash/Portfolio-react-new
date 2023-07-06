@@ -42,15 +42,31 @@ const About = () => {
           <img src={Intro} className="intro"></img>
 
           <p className="p-texts">
-            I am<span> Yash Sachan</span> pursuing BTech in <span>CSE</span>{" "}
-            from IIIT Sonepat. I'm a frontend focused{" "}
-            <span>full stack developer</span> with experience in front end web
-            development, backend debugging and UI UX designing. I'm a{" "}
-            <span>quick learner</span> and <span>good team player</span>, can
-            collaborate with clients efficiently and work on developing
+            <span className="intro-heading"> Yash Sachan</span>
+            <br />
+            <span className="intro-text">Passionate Full Stack Developer</span>
+            <hr />
+            <br /> pursuing BTech in <span>CSE</span> from IIIT Sonepat. I'm a
+            frontend focused <span>full stack developer</span> with experience
+            in front end web development, backend debugging and UI UX designing.
+            I'm a <span>quick learner</span> and <span>good team player</span>,
+            can collaborate with clients efficiently and work on developing
             scalable, user-friendly solutions. Please feel free to find out
             more.
+            <hr></hr>
+            <br></br>
+            <span>Age :</span> 20 <br />
+            <span>College :</span>
+            <a className="intro-link">
+              Indian Institute of Information Technology, Sonepat
+            </a>
           </p>
+          <button class="button">
+            <span class="button_lg">
+              <span class="button_sl"></span>
+              <span class="button_text">Resume</span>
+            </span>
+          </button>
         </div>
         <h2 className="head-text size">
           Software is a great combination of
@@ -76,8 +92,8 @@ const About = () => {
                 {about.imgURL}
               </motion.div>
               <h2
-                className="bold-text"
-                style={{ marginTop: 20, fontSize: "0.9rem" }}
+                className="p-text"
+                style={{ margin: 0.2, fontSize: "0.8rem" }}
               >
                 {about.title}
               </h2>
@@ -87,7 +103,6 @@ const About = () => {
             </motion.div>
           ))}
         </div>
-        z
       </div>
     </div>
   );
