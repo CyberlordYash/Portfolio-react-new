@@ -74,7 +74,13 @@
 }
 
 .app__footer-form {
-  background-color: #100d25;
+  background: linear-gradient(
+    135deg,
+    #191438 0%,
+    #100d25 50%,
+    #05011c 51%,
+    #0c0123 100%
+  );
   padding: 1rem;
 
   border-radius: 10px;

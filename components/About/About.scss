@@ -1,13 +1,12 @@
 #about {
-  background-image: url("./b.svg");
+  background-image: url("../Work/b.svg");
   width: 100%;
   height: 100%;
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
 }
-.bg {
-}
+
 .transparent {
   margin: 2rem 0 0 0;
   padding: 1rem;
@@ -99,6 +98,17 @@
 }
 .introduction {
   background-color: #100d25;
+  background: linear-gradient(
+    135deg,
+    #191438 0%,
+    #100d25 50%,
+    #05011c 51%,
+    #0c0123 100%
+  );
+  img {
+    border-radius: 30px;
+    opacity: 0.8;
+  }
   margin: 1rem 0 2rem 0;
   border-radius: 10px;
   display: flex;
@@ -112,6 +122,7 @@
 .intro {
   width: 13rem;
   padding: 1rem;
+  border-radius: 10px;
 }
 span {
   color: rgb(116, 150, 255);

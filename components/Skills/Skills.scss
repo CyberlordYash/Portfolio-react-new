@@ -45,7 +45,13 @@
   }
 }
 .app__skills-item {
-  background-color: #100d25;
+  background: linear-gradient(
+    135deg,
+    #191438 0%,
+    #100d25 50%,
+    #05011c 51%,
+    #0c0123 100%
+  );
   border-radius: 10px;
   flex-direction: column;
   text-align: center;
@@ -138,7 +144,13 @@
 }
 .left-container {
   text-align: center;
-  background-color: #1d1836;
+  background: linear-gradient(
+    135deg,
+    #191438 0%,
+    #100d25 50%,
+    #05011c 51%,
+    #0c0123 100%
+  );
   margin: 1rem;
   backdrop-filter: blur(14px);
   border-bottom: 5px solid rgba(200, 206, 255, 0.634);
@@ -164,7 +176,13 @@
   height: 200px;
   padding: 2rem;
   padding-left: 5rem;
-  background-color: #1d1836;
+  background: linear-gradient(
+    135deg,
+    #191438 0%,
+    #100d25 50%,
+    #05011c 51%,
+    #0c0123 100%
+  );
   margin: 1rem;
   backdrop-filter: blur(14px);
   border-bottom: 5px solid rgba(200, 206, 255, 0.634);

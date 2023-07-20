@@ -8,7 +8,7 @@ import Todo from "../../assets/todo.svg";
 import Jarvis from "../../assets/ai.svg";
 import Summary from "../../assets/summary.svg";
 
-import News from "../../assets/news.svg";
+import Car from "../../assets/Car.svg";
 import Gym from "../../assets/gym.svg";
 const Work = () => {
   const filterWork = [
@@ -42,13 +42,12 @@ const Work = () => {
       bgColor: "#db63ff7e",
     },
     {
-      title: "News Express",
-      description:
-        "Stay informed and up-to-date with the latest news from around the world  ",
-      imgURL: News,
-      tags: "Not yet deployed",
-      projectLink: "https://dev-yash-newsexpress.netlify.app/",
-      codeLink: "https://github.com/CyberlordYash/News-express",
+      title: "Car World",
+      description: "Search the best cars in the world  ",
+      imgURL: Car,
+      tags: "Under Development",
+      projectLink: "https://dev-yash-carworld.netlify.app/",
+      codeLink: "https://github.com/CyberlordYash/CarWorld",
       bgColor: "#71d8fa7e",
     },
 

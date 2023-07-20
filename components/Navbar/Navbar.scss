@@ -6,10 +6,15 @@
   padding: 0.8rem;
   background-color: rgba(0, 18, 33, 0);
   box-shadow: 1px 0px 1px 0.1px rgba(0, 195, 255, 0.448);
+
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+
   margin: 0.5rem 0.5rem;
-  backdrop-filter: blur(60px);
+  backdrop-filter: blur(3px);
   border-radius: 10px;
-  border: 0px solid rgba(255, 255, 255, 0.18);
+
   position: fixed;
   z-index: 2;
 }
@@ -18,8 +23,8 @@
   justify-content: center;
   align-items: center;
   img {
-    width: 90px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 
     @media screen and (min-width: 2000px) {
       width: 180px;

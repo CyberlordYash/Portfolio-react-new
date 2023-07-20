@@ -3,12 +3,12 @@ import "./About.scss";
 
 import { motion } from "framer-motion";
 import AppWrap from "../../wrapper/AppWrap";
-
+import hero from "../../assets/me.png";
 import { AiFillSetting, AiFillAndroid } from "react-icons/ai";
 import { SiBlockchaindotcom } from "react-icons/si";
 import { BsFillPenFill } from "react-icons/bs";
 import MotionWrap from "../../wrapper/MotionWrap";
-import Intro from "../../assets/intro.svg";
+
 const abouts = [
   {
     title: "Web Developer",
@@ -39,7 +39,7 @@ const About = () => {
       </h2>
       <div className="transparent">
         <div className="introduction">
-          <img src={Intro} className="intro"></img>
+          <img src={hero} className="intro"></img>
 
           <p className="p-texts">
             <span className="intro-heading"> Yash Sachan</span>
@@ -57,7 +57,7 @@ const About = () => {
             <br></br>
             <span>Age :</span> 20 <br />
             <span>College :</span>
-            <a className="intro-link">
+            <a className="intro-link" href="http://iiitsonepat.ac.in/">
               Indian Institute of Information Technology, Sonepat
             </a>
           </p>
@@ -83,14 +83,14 @@ const About = () => {
               className="app__profile-item"
               key={about.title + index}
             >
-              <motion.div
+              <div
                 whileInView={{ rotate: 360 }}
                 transition={{ duration: 1.5, type: "tween" }}
                 className="icon"
                 key={about.title + index}
               >
                 {about.imgURL}
-              </motion.div>
+              </div>
               <h2
                 className="p-text"
                 style={{ margin: 0.2, fontSize: "0.8rem" }}

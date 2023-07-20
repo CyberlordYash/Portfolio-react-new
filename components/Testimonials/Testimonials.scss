@@ -22,7 +22,13 @@
   width: 60%;
   margin: 1rem;
   min-height: 320px;
-  background-color: #100d25;
+  background: linear-gradient(
+    135deg,
+    #191438 0%,
+    #100d25 50%,
+    #05011c 51%,
+    #0c0123 100%
+  );
   box-shadow: 1px 0px 1px 0.6px rgba(0, 195, 255, 0.448);
   backdrop-filter: blur(30px);
   border-bottom: 10px solid rgba(0, 195, 255, 0.248);
