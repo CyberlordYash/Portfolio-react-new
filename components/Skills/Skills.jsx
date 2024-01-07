@@ -14,7 +14,7 @@ import {
 } from "react-icons/tb";
 
 import { SiExpress, SiDart, SiFirebase, SiHtml5 } from "react-icons/si";
-
+import pent from "../../assets/pent.svg";
 import "./Skills.scss";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
@@ -156,65 +156,34 @@ const Skills = () => {
       company: "IIIT ",
       desc: "worked as a backend developer at IIIT",
       year: "2023",
+      bgColor: "red",
     },
   ];
   return (
     <>
       <div className="app__skills">
+        <div className="pent-about">
+          <img src={pent}></img>
+        </div>
         <h2 className="head-text"> Skills</h2>
         <div className="app__skills-container">
           <div className="app__skills-list">
             {skills.map((skill) => (
-              <div className="app__skills-item app__flex" key={skill.name}>
+              <div
+                className="app__skills-item app__flex"
+                key={skill.name}
+                style={{ backgroundColor: skill.bgColor }}
+              >
                 <motion.div
-                  whileHover={{ scale: 1.15 }}
-                  transition={{ duration: 0.5, type: "tween" }}
+                  whileInView={{ scale: [0.6, 1] }}
+                  transition={{ duration: 1.5, type: "tween" }}
                   className="app__flex"
                 >
                   {skill.imgURL}
                 </motion.div>
-                <p className="p-text">{skill.name}</p>
+                <p className="p">{skill.name}</p>
               </div>
             ))}
-          </div>
-          s{" "}
-        </div>
-      </div>
-      <div className="app__skills">
-        <h2 className="gap head-text">
-          <span>Experience</span>
-        </h2>
-        <div className="app__skills-container">
-          <div>
-            <div className="mid-line"></div>
-            <motion.div
-              whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 0.5, type: "tween" }}
-              className="left-container"
-            >
-              <h2 className="work-head bold-text">Work</h2>
-              <p className="p-text">Company</p>
-              <ul>
-                <li className="p-text">Task1</li>
-                <li className="p-text">Task2</li>
-                <li className="p-text">Task3</li>
-              </ul>
-            </motion.div>
-
-            <motion.div
-              whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 0.5, type: "tween" }}
-              className="right-container"
-            >
-              {" "}
-              <h2 className="work-head bold-text">Work</h2>
-              <p className="p-text">Company</p>
-              <ul>
-                <li className="p-text">Task1</li>
-                <li className="p-text">Task2</li>
-                <li className="p-text">Task3</li>
-              </ul>
-            </motion.div>
           </div>
         </div>
       </div>

@@ -5,13 +5,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap");
 ::-webkit-scrollbar {
-  background-color: #050816;
+  background-color: #ffffff67;
   width: 0.6rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(#050816, #313bac);
-  border-radius: 3px;
+  background-color: #313bac;
+  border-radius: 1px;
 }
 @font-face {
   font-family: myFont;

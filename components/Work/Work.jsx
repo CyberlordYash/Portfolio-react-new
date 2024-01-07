@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "./Work.scss";
-import Market from "../../assets/market.svg";
+import Market from "../../assets/ebazaar.jpg";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import AppWrap from "../../wrapper/AppWrap";
-import Todo from "../../assets/todo.svg";
-import Jarvis from "../../assets/ai.svg";
-import Summary from "../../assets/summary.svg";
 
-import Car from "../../assets/Car.svg";
-import Gym from "../../assets/gym.svg";
+import Summary from "../../assets/summarise.jpg";
+import Gympic from "../../assets/gym.jpg";
+
+import Portfolio from "../../assets/portfolio.jpg";
+import pent from "../../assets/penta.svg";
 const Work = () => {
   const filterWork = [
     {
@@ -26,7 +26,7 @@ const Work = () => {
       title: "Gym Shark",
       description:
         "A React website made to help individual focus on their health goals  ",
-      imgURL: Gym,
+      imgURL: Gympic,
       tags: "React+Typescript+RapidAPIs+MUI",
       projectLink: "https://dev-yash-gymshark.netlify.app/",
       codeLink: "https://github.com/CyberlordYash/Gym-shark",
@@ -42,44 +42,49 @@ const Work = () => {
       bgColor: "#db63ff7e",
     },
     {
-      title: "Car World",
-      description: "Search the best cars in the world  ",
-      imgURL: Car,
-      tags: "Under Development",
+      title: "My Portfolio",
+      description: "A simple modern Portfolio  ",
+      imgURL: Portfolio,
+      tags: "React+framerMotion",
       projectLink: "https://dev-yash-carworld.netlify.app/",
       codeLink: "https://github.com/CyberlordYash/CarWorld",
-      bgColor: "#71d8fa7e",
+      bgColor: "#313bacb3",
     },
 
-    {
-      title: "JarvisGPT",
-      description: "--",
-      imgURL: Jarvis,
-      tags: "React+OpenAI",
-      description:
-        "A simple ChatGPT clone that answers all of your daily questions  ",
-      projectLink: "https://dev-yash-jarvisgpt.netlify.app/",
-      codeLink: "https://github.com/CyberlordYash/JarvisGPT",
-      bgColor: "#7f7f7f7e",
-    },
-    {
-      title: "ToDo app",
-      description: "A simple Flutter app for balancing power and simplicity  ",
-      imgURL: Todo,
-      tags: "Flutter+Firebase",
-      projectLink: "https://github.com/CyberlordYash/ToDo-Android",
-      codeLink: "https://github.com/CyberlordYash/ToDo-Android",
-      bgColor: "#7a71fa7e",
-    },
+    // {
+    //   title: "JarvisGPT",
+    //   description: "--",
+    //   imgURL: Jarvis,
+    //   tags: "React+OpenAI",
+    //   description:
+    //     "A simple ChatGPT clone that answers all of your daily questions  ",
+    //   projectLink: "https://dev-yash-jarvisgpt.netlify.app/",
+    //   codeLink: "https://github.com/CyberlordYash/JarvisGPT",
+    //   bgColor: "#7f7f7f7e",
+    // },
+    // {
+    //   title: "ToDo app",
+    //   description: "A simple Flutter app for balancing power and simplicity  ",
+    //   imgURL: Todo,
+    //   tags: "Flutter+Firebase",
+    //   projectLink: "https://github.com/CyberlordYash/ToDo-Android",
+    //   codeLink: "https://github.com/CyberlordYash/ToDo-Android",
+    //   bgColor: "#7a71fa7e",
+    // },
   ];
   const [activeFilter, setActiveFilter] = useState("All");
 
   return (
     <div className="app__work">
+      <div className="pent-work">
+        <img src={pent}></img>
+      </div>
+      <div className="pent-work2">
+        <img src={pent}></img>
+      </div>
       <h2 className="head-text">
-        My Creative
-        <br />
-        <span>Projects </span>
+        My
+        <span> Projects </span>
         Section
       </h2>
       <div className="app__work-filter">
@@ -96,7 +101,8 @@ const Work = () => {
       </div>
       <motion.div className="app__work-portfolio">
         {filterWork.map((work, index) => (
-          <div
+          <motion.div
+            whileInView={{ scale: [0.6, 1] }}
             style={{ backgroundColor: work.bgColor }}
             className="app__work-item app__flex"
             key={index}
@@ -139,14 +145,14 @@ const Work = () => {
             </div>
             <div className="app__work-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
-              <p className="p-text" style={{ marginTop: 10 }}>
+              <p className="p-text1" style={{ marginTop: 10 }}>
                 {work.description}
               </p>
               <div className="app__work-tag app__flex">
                 <p className="p-text">{work.tags}</p>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </motion.div>
     </div>

@@ -12,10 +12,25 @@
   height: 10px;
   border-radius: 50%;
 }
-
+.matrix {
+  position: absolute;
+  inset: 0;
+  height: 50%;
+  background-color: red;
+  display: none;
+}
 .light {
   --text-primary-color: "#000000";
-
+  .type {
+    .p-text1 {
+      color: black;
+    }
+  }
+  .bg {
+    .button {
+      color: white;
+    }
+  }
   .heroTitle_1::before {
     color: black;
   }
@@ -73,10 +88,15 @@
     span {
       color: #100d25;
     }
+    .button {
+      span {
+        color: rgb(230, 226, 255);
+      }
+    }
     background: none;
     background-color: rgb(227, 231, 239);
 
-    backdrop-filter: blur(14px);
+    backdrop-filter: blur(1px);
   }
   .app__work-portfolio {
     .app__work-item {
@@ -150,9 +170,8 @@
     background-color: rgb(227, 231, 239);
     div {
       background-color: rgb(227, 231, 239);
-      backdrop-filter: blur(14px);
+
       box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15);
-      border: none;
     }
   }
   .app__skills-item {
@@ -299,7 +318,7 @@
   justify-content: flex-end;
   align-items: center;
   flex-direction: column;
-
+  z-index: 100;
   padding: 1rem 1rem 6rem 0.8rem;
 
   .insta {
@@ -308,12 +327,12 @@
   .twitter {
   }
   div {
-    width: 42px;
-    height: 44px;
+    width: 48px;
+    height: 50px;
     border-radius: 0 40% 5% 0;
     background-color: #100d25;
     margin: 0.15rem 0;
-    box-shadow: 0px 1px 0px 1px rgba(0, 195, 255, 0.448);
+    box-shadow: 0px 1px 0px 1px #313bac;
     background-color: rgba(8, 3, 21, 0.955);
 
     backdrop-filter: blur(50px);
@@ -325,8 +344,8 @@
     transition: all 0.3s ease-in-out;
 
     svg {
-      width: 17px;
-      height: 17px;
+      width: 23px;
+      height: 23px;
       color: rgba(255, 255, 255, 0.767);
     }
 
@@ -411,9 +430,7 @@
     height: 7rem;
   }
 }
-//button css
 .button {
-  margin: 2rem;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -428,6 +445,7 @@
   font-weight: bold;
   font-size: 14px;
   transition: all 0.15s ease;
+  margin: 2rem;
 }
 
 .button::before,
@@ -476,7 +494,7 @@
   display: block;
   padding: 10px 20px;
   color: #fff;
-  background-color: #110539;
+  background-color: #0f1923;
   overflow: hidden;
   box-shadow: inset 0px 0px 0px 1px transparent;
 }
@@ -511,7 +529,7 @@
   bottom: -1px;
   left: -8px;
   width: 0;
-  background-color: #3a5bff;
+  background-color: #313bac;
   transform: skew(-15deg);
   transition: all 0.2s ease;
 }
@@ -531,6 +549,7 @@
 .button:hover .button_lg::after {
   background-color: #fff;
 }
+
 .loader,
 .loader::before,
 .loader::after {
@@ -564,7 +583,7 @@
 }
 
 .loader::after {
-  border-color: #9c40fc;
+  border-color: #8a1cff;
   width: 120%;
   height: 120%;
   animation-delay: 0.1s;
@@ -574,4 +593,54 @@
   to {
     transform: rotate(360deg);
   }
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cursor-text {
+  font-size: 50rem;
+  background-color: red;
+}
+.custom-cursor {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(42, 0, 209);
+  @media screen and (max-width: 600px) {
+    mix-blend-mode: hue;
+  }
+}
+.cursor-text {
+  font-size: 5px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: none;
 }

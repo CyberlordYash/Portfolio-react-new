@@ -8,9 +8,9 @@
 }
 .bgc {
   width: 100%;
-  background-color: rgba(0, 18, 33, 0.316);
+  background-color: rgba(0, 18, 33, 0.021);
   backdrop-filter: blur(3px);
-  box-shadow: 1px 0px 1px 1px rgba(0, 195, 255, 0.448);
+  box-shadow: 0px 0px 0px 2px #313bac;
   border-radius: 10px;
 }
 .app__testimonial {
@@ -104,37 +104,5 @@
         color: var(--white-color);
       }
     }
-  }
-}
-
-.app__testimonials-brands {
-  width: 80%;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-  div {
-    width: 150px;
-    margin: 1.5rem;
-    img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      filter: grayscale(1);
-    }
-    &:hover {
-      img {
-        filter: grayscale(0);
-      }
-    }
-    @media screen and (min-width: 2000px) {
-      width: 210px;
-      margin: 2rem;
-    }
-    @media screen and (max-width: 450px) {
-      width: 120px;
-      margin: 1rem;
-    }
-  }
-  @media screen and (max-width: 800px) {
-    width: 100%;
   }
 }

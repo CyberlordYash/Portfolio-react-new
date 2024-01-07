@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import "./Chatbot.scss";
 import { motion } from "framer-motion";
 import { BsFillChatRightFill, BsRobot } from "react-icons/bs";
+import { TbMoonStars } from "react-icons/tb";
 import Modal from "../Modal/Modal";
+
+import { MdOutlineWbSunny } from "react-icons/md";
 const Chatbot = (props) => {
   const [showModal, setShowModal] = useState(false);
 
@@ -22,12 +25,19 @@ const Chatbot = (props) => {
       <div
         className="chatbot"
         onClick={() => {
-          if (showModal === false) {
-            setShowModal(true);
-          } else setShowModal(false);
+          if (props.lightMode === ("light" || "")) {
+            props.setLightModeHandler("dark");
+          } else {
+            props.setLightModeHandler("light");
+          }
         }}
       >
-        <BsRobot className="icon"></BsRobot>
+        {props.lightMode === ("light" || "") && (
+          <TbMoonStars className="icon"></TbMoonStars>
+        )}
+        {props.lightMode === "dark" && (
+          <MdOutlineWbSunny className="icon"></MdOutlineWbSunny>
+        )}
       </div>
     </div>
   );

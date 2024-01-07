@@ -10,6 +10,7 @@ import Footer from "./components/Footer/Footer";
 import Chatbot from "./components/chatbot/Chatbot.jsx";
 
 import Footerend from "./components/Footerend/Footerend";
+import Cursor from "./components/Cursor";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -19,7 +20,7 @@ const App = () => {
       setLoading(false);
     }, 2000);
   }, []);
-  const [lightMode, setLightMode] = useState("");
+  const [lightMode, setLightMode] = useState("light");
   const setLightModeHandler = (data) => {
     setLightMode(data);
     console.log(data);
@@ -32,7 +33,8 @@ const App = () => {
           <div className="lottie loader"></div>
         </div>
       ) : (
-        <div>
+        <div className="jumbo">
+          <Cursor></Cursor>
           <Chatbot
             setLightModeHandler={setLightModeHandler}
             lightMode={lightMode}

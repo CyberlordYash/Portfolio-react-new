@@ -11,9 +11,9 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
-  background-color: rgba(0, 18, 33, 0.101);
-  box-shadow: 1px 0px 1px 0.2px rgba(0, 195, 255, 0.448);
-  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.055);
+  box-shadow: 0px 0px 0px 1px #313bac;
+  backdrop-filter: blur(3px);
   border-radius: 10px;
 }
 .app__footer-cards {
@@ -29,8 +29,8 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 1rem;
-    padding: 1.2rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
     border-radius: 10px;
     cursor: pointer;
     background-color: rgba(163, 12, 12, 0.333);
@@ -74,13 +74,6 @@
 }
 
 .app__footer-form {
-  background: linear-gradient(
-    135deg,
-    #191438 0%,
-    #100d25 50%,
-    #05011c 51%,
-    #0c0123 100%
-  );
   padding: 1rem;
 
   border-radius: 10px;
@@ -89,7 +82,7 @@
   margin: 2rem 6rem;
   div {
     width: 100%;
-    margin: 0.75rem 0;
+
     border-radius: 10px;
     cursor: pointer;
     background-color: #dcf8fe;
@@ -106,7 +99,7 @@
       outline: none;
     }
     textarea {
-      height: 170px;
+      height: 100px;
     }
     &:hover {
       box-shadow: 0 0 25px rgba(13, 90, 124, 0.493);
